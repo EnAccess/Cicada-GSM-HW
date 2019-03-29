@@ -1,0 +1,312 @@
+* Models adapted to LTSPICE syntax by Helmut Sennewald.  03/14/2004
+* Don't remove this copyright notice.
+* The used models are property of ONSEMI and/or Intusoft(www.intusoft.com).
+* They are from ONsemi's webpage and also from the Intusoft's SPICE (ICAP/4 demo 8.3.10).
+* The links are www.onsemi.com and www.intusoft.com .
+
+* All SPICE command lines starting with a comment "*" have been changed 
+* to be compatible with LTSPICE. 
+
+* This model is included in the ICAP/4 demo free downloadable software.
+* It's very similar to the model in Hymovitz.lib. The vt threshholds
+* are different and the model here uses net 90 instead of 0.
+.SUBCKT MC34063 swc    swe    ct    90    2    vdd    isns    drc
+*               SW-col SW-em  Ct    gnd    cinv vdd    isns    drive col
+*DC-DC controller
+*B5 5 90 V=~(v(9,90)&v(8,90))
+B5 5 90 V=!(v(9,90)&v(8,90))
+Q3 ct 22 vdd QN2907
+V10 isns 22 DC=.3215
+*B6 7 90 V=~(v(4,90)&v(10,90))
+B6 7 90 V=!(v(4,90)&v(10,90)) 
+R3 5 10 100
+R9 13 swe 100
+C2 10 90 100p IC=5
+R4 2 90 10MEG
+C10 2 90 50p
+R5 7 8 100
+C3 8 90 100p IC=0
+S1 srst 90 ct 90 _S2_mod  
+R1 srst vdd 10k
+Q2 drc 14 13 _Q3_mod 
+*B4 6 90 V=v(2,90)  > (v(vref,90) + v(voff,90))  ? 0 : v(vdd,90)
+B4 6 90 V=IF(v(2,90)  > (v(vref,90) + v(voff,90)), 0, v(vdd,90) )
+*B2 vdd ct I=V(srst,90) > 3 ? 35U : -220U
+B2 vdd ct I=IF(V(srst,90) > 3, 35U, -220U )
+*B3 9 90 V=v(diff,90) < 1 ? v(vdd,90) : (v(6,90) > 3) ? 0 : v(vdd,90)
+B3 9 90 V=IF(v(diff,90) < 1, v(vdd,90), IF( (v(6,90) > 3), 0, v(vdd,90) ) )
+*B7 16 90 V=V(vdd,90)-1.5 > 1.25 ? 1.25 : V(vdd,90)-1.25 < 0 ? 0 :V(vdd,90)-1.25
+B7 16 90 V=IF( V(vdd,90)-1.5 > 1.25, 1.25, IF( V(vdd,90)-1.25 < 0, 0, V(vdd,90)-1.25 ) )
+*V7 16 vref
+V7 16 vref 0
+R6 vref 90 400
+R7 vref vdd 90k
+Q1 swc 13 swe _Q4_mod 
+R8 diff 90 10k
+D1 14 15 DN4148
+D2 swe 14 DN4148
+V3 drc 15 DC=700m
+*B8 swe 14 I=v(5,90) > 2.5 ? 10m : -10m
+*** Threshold changed to 0.5, because of different(0,1 versus 0.3,3.5) output level of B-sources.
+B8 swe 14 I=IF( v(5,90) > 0.5, 10m, -10m )
+V4 voff 90 DC=2m
+C5 srst diff 10p
+*B1 4 90 V=(v(diff,90) > -1) ? v(vdd,90) : 0
+B1 4 90 V=IF( (v(diff,90) > -1), v(vdd,90), 0 )
+R10 vdd isns 10k
+
+** discrete models **
+.MODEL QN2907 PNP BF=200 BR=6 CJC=19PF CJE=23PF IKF=100E-3
++ IS=1.1E-12 ISE=1.3E-11 MJC=.2 MJE=1.25 NE=1.9 NF=1.21 RC=.6
++ TF=5E-10 TR=34E-9 VAF=50 VJC=.5 VJE=.30 XTB=1.5
+.MODEL DN4148 D BV=100V CJO=4PF IS=7E-09 M=.45 N=2 RS=.8
++ TT=6E-09 VJ=.6V
+.MODEL _Q4_mod NPN BF=50 RC=.125 RE=.125 TF=10n
+.MODEL _Q3_mod NPN BF=50
+.MODEL _S2_mod SW VT=1.25 VH=.8
+
+.ENDS
+*
+*
+
+* This model is part of a ICAP/4 demo circuit from the ONsemi webpage.
+* The ground pin must be always at net 0 in the schematic!
+.SUBCKT mc34063a 1 2 3 4 5 6 7 8
+*exempt 20030227 20395 -30736294
+*BY KEHINDE OMOLAYO 2-20-03
+*TERMINAL ID
+*SWITCH COLLECTOR=1 SWITCH EMITTER=2 TIMING CAPACITOR=3 GND=4
+*COMPARATOR INVERTING INPUT=5 VCC=6 IPK SENSE=7 DRIVER COLLECTOR=8
+.MODEL DMC34063 D (CJO=2P N=0.05)
+.MODEL QSWITCH NPN BF=75 CJC=2P IS=3E-9 RB=1 RC=0.45 RE=0
++ VJC=.75 VJE=.75 VJS=.75
+E1 10 0 5 4 1
+R1 4 5 10MEG
+V1 20 0 PULSE 0 2
+E2 11 0 3 4 1
+*B1 13 0 V=1M/(ABS((27.475-195M*V(12))+(36.002+244M*V(12))*V(9)-(302.302+651M*V(12))*V(9)^2)+1F)
+B1 13 0 V=1M/(ABS((27.475-195M*V(12))+(36.002+244M*V(12))*V(9)-(302.302+651M*V(12))*V(9)**2)+1F)
+E3 12 0 6 4 1
+E4 9 0 6 7 1
+R2 6 7 10MEG
+*B2 14 0 V=1M*((-10.765-151M*V(12))+(45.344+864M*V(12))*V(9)-+(35.99+1.378*V(12))*V(9)^2+(8.341+839M*V(12))*V(9)^3)
+B2 14 0 V=1M*((-10.765-151M*V(12))+(45.344+864M*V(12))*V(9)-+(35.99+1.378*V(12))*V(9)**2+(8.341+839M*V(12))*V(9)**3)
+*B4 15 0 V=V(9)>0.32 ? V(14) : V(13)
+B4 15 0 V=IF( V(9)>0.32, V(14), V(13) )
+C1 19 0 10P
+*B5 16 0 V= V(20)<1 ? 2 :  V(24)>1 ? 2 : V(19)>1 ? 0 : 2
+B5 16 0 V= IF( V(20)<1, 2, IF(V(24)>1, 2, IF( V(19)>1, 0, 2 ) ) )
+R3 16 17 150
+C2 17 0 10P
+*B6 18 0 V=V(20)<1 ? 0 : V(24)>1 ? 0 : V(11)<(1.083-1.239*V(29)) ? 2 : V(17)>1 ? 0 : 2
+B6 18 0 V= IF( V(20)<1, 0, IF( V(24)>1, 0, IF( V(11)<(1.083-1.239*V(29)), 2, IF(V(17)>1, 0, 2 ) ) ) )
+R4 18 19 150
+D1 4 3 DMC34063
+D2 3 6 DMC34063
+C3 11 31 1N
+*B7 4 36 I=V(17)>1 ? -(224.4U+2.359U*V(12))*0.77 : V(15)*0.77
+B7 4 36 I=IF( V(17)>1, -(224.4U+2.359U*V(12))*0.77, V(15)*0.77 )
+C5 23 0 10P
+*B9 21 0 V= V(20)<1 ? 2 : V(17)>1 ? 2 : V(26)>1 ? 0 : 2
+B9 21 0 V= IF( V(20)<1, 2, IF( V(17)>1, 2, IF( V(26)>1, 0, 2 ) ) )
+R5 27 26 150
+C6 26 0 10P
+*B10 27 0 V=V(20)<1 ? 0 : V(17)>1 ? 0 : V(10)<1.25 ? 2 : V(23)>1 ? 0 : 2
+B10 27 0 V=IF( V(20)<1, 0, IF(V(17)>1, 0, IF(V(10)<1.25, 2, IF(V(23)>1, 0, 2 ) ) ) )
+R6 21 23 150
+*B12 33 0 V=V(11)>(1.148+184.6M*V(29)) ? 2 : 0
+B12 33 0 V=IF( V(11)>(1.148+184.6M*V(29)), 2, 0 )
+R13 33 24 10K
+C8 24 0 10P
+Q1 8 30 25 QSWITCH
+Q2 1 25 2 QSWITCH
+R15 25 2 100
+D5 2 30 DMC34063
+G1 2 30 26 23 5M
+R16 2 4 10MEG
+R23 31 28 1M
+*V6 28 0 
+V6 28 0 0
+*V7 36 3 
+V7 36 3 0
+B13 29 0 V=I(V6)/(I(V7)+866.8M*I(V6))
+.ENDS
+
+
+*==========================================================
+* MC34063
+* ON Semiconductor
+* DC-DC controller
+*
+* This model was developed for ON Semiconductor by:
+* AEI Systems, LLC
+* 5777 W. Century Blvd. Suite 876
+* Los Angeles, California 90045
+* Copyright 2002, all rights reserved.
+*
+* This model is subject to change without notice.
+* Users may not directly or indirectly re-sell or 
+* re-distribute this model. This model may not 
+* be used, modified, or altered 
+* without the consent of ON Semiconductor. 
+*
+* For more information regarding modeling services,
+* model libraries and simulation products, please
+* call AEi Systems at (310) 863-8034, or contact 
+* AEi by email: info@aeng.com. http://www.AENG.com
+*
+* Revision: 1.0
+*==========================================================
+**********
+.SUBCKT MC34063p swc    swe    ct    90    2    vdd    isns    drc
+*               SW-col SW-em  Ct    gnd    cinv vdd    isns    drive col
+*DC-DC controller
+
+* PSpice translation by Christophe Basso, christophe.basso@onsemi.com
+
+EB5 5 90 Value = { IF ( v(9,90)>2.5 & v(8,90)>2.5, 0, 5 ) }
+Q3 ct 22 vdd QN2907
+V10 isns 22 DC=.3215
+EB6 7 90 Value = { IF ( v(4,90)>2.5 & v(10,90)>2.5, 0, 5 ) }
+R3 5 10 100
+R9 13 swe 100
+C2 10 90 100p IC=5
+R4 2 90 10MEG
+C10 2 90 50p
+R5 7 8 100
+C3 8 90 100p IC=0
+XTOF1 srst 90 ct 90 SWhyste params: VT=1.25 VH=.8 
+R1 srst vdd 10k
+Q2 drc 14 13 _Q3_mod 
+EB4 6 90 Value = { IF ( v(2,90)  > (v(vref,90) + v(voff,90)), 0, v(vdd,90) ) }
+GB2 vdd ct Value = { IF ( V(srst,90) > 3, 35U, -220U ) }
+EB3 9 90 Value = { IF ( v(diff,90) < 1, v(vdd,90), IF ( (v(6,90) > 3), 0, v(vdd,90) ) ) }
+EB7 16 90 Value = { IF ( V(vdd,90)-1.5 > 1.25, 1.25, IF ( V(vdd,90)-1.25 < 0, 0, V(vdd,90)-1.25 ) ) }
+V7 16 vref
+R6 vref 90 400
+R7 vref vdd 90k
+Q1 swc 13 swe _Q4_mod 
+R8 diff 90 10k
+D1 14 15 DN4148
+D2 swe 14 DN4148
+V3 drc 15 DC=700m
+GB8 swe 14 Value = { IF ( v(5,90) > 2.5, 10m, -10m ) }
+V4 voff 90 DC=2m
+C5 srst diff 10p
+EB1 4 90 Value = { IF ( (v(diff,90) > -1), v(vdd,90), 0 ) }
+R10 vdd isns 10k
+** discrete models **
+.MODEL QN2907 PNP BF=200 BR=6 CJC=19PF CJE=23PF IKF=100E-3
++ IS=1.1E-12 ISE=1.3E-11 MJC=.2 MJE=1.25 NE=1.9 NF=1.21 RC=.6
++ TF=5E-10 TR=34E-9 VAF=50 VJC=.5 VJE=.30 XTB=1.5
+.MODEL DN4148 D BV=100V CJO=4PF IS=7E-09 M=.45 N=2 RS=.8
++ TT=6E-09 VJ=.6V
+.MODEL _Q4_mod NPN BF=50 RC=.125 RE=.125 TF=10n
+.MODEL _Q3_mod NPN BF=50
+.ENDS
+**********
+* PSpice hysteresis switch made by Chris Basso
+.subckt SWhyste NodeMinus NodePlus Plus Minus PARAMS: RON=1 ROFF=1MEG VT=5 VH=2
+S5 NodePlus NodeMinus 8 0 smoothSW
+EBcrtl 8 0 Value = { IF ( V(plus)-V(minus) > V(ref), 1, 0 ) }
+EBref ref1 0 Value = { IF ( V(8) > 0.5, {VT-VH}, {VT+VH} ) }
+Rdel ref1 ref 100
+Cdel ref 0 100p  IC={VT+VH}
+Rconv1 8 0 10Meg
+Rconv2 plus 0 10Meg
+Rconv3 minus 0 10Meg
+.model smoothSW VSWITCH (RON={RON} ROFF={ROFF} VON=1 VOFF=0)
+.ends SWhyste
+
+* Hymovitz.lib
+* This model is very similar to the model in the 
+*==========================================================
+* MC34063
+* ON SEMICONDUTOR
+* 1.5 A, Step-Up/Down/Inverting Switching Regulator
+*
+* This model was developed for On Semiconductor by:
+* AEI Systems, LLC
+* 5777 W. Century Blvd. Suite 876
+* Los Angeles, California 90045
+* Copyright 2002, all rights reserved.
+*
+* This model is subject to change without notice.
+* Users may not directly or indirectly re-sell or 
+* re-distribute this model. This model may not 
+* be used, modified, or altered 
+* without the consent of On Semiconductor. 
+*
+* For more information regarding modeling services,
+* model libraries and simulation products, please
+* call AEi Systems at (310) 863-8034, or contact 
+* AEi by email: info@aeng.com. http://www.AENG.com
+*
+* Revision: 2/18/02, version 1.1
+*==========================================================
+**********
+*SRC=MC33063;MC33063;Regulators;On Semiconductor;1.5A
+*SYM=MC34063
+.SUBCKT MC33063 swc    swe    ct    90    2    vdd    isns    drc
+*               SW-col SW-em  Ct    gnd    cinv vdd    isns    drive col
+*DC-DC controller
+*B5 5 0 V=~(v(9)&v(8))
+B5 5 90 V=!(v(9,90)&v(8,90))
+Q1 ct isns vdd QN2907
+.MODEL QN2907 PNP BF=200 BR=6 CJC=19PF CJE=23PF IKF=100E-3
++ IS=1.1E-12 ISE=1.3E-11 MJC=.2 MJE=1.25 NE=1.9 NF=1.21 RC=.6
++ TF=5E-10 TR=34E-9 VAF=50 VJC=.5 VJE=.85 XTB=1.5
+*B6 7 0 V=~(v(4)&v(10))
+B6 7 90 V=!(v(4,90)&v(10,90)) 
+R3 5 10 100
+R9 13 swe 100
+*C2 10 0 100p IC=5
+C2 10 90 100p IC=5
+R4 2 90 10MEG
+R5 7 8 100
+*C3 8 0 100p IC=0
+C3 8 90 100p IC=0
+S1 srst 90 ct 90 _S2_mod  
+.MODEL _S2_mod SW VT=1.75 VH=1.25
+R1 srst vdd 10k
+Q2 drc 14 13 _Q3_mod 
+.MODEL _Q3_mod NPN BF=50
+*B4 6 0 V=v(2,90)  > (v(vref,90) + v(voff,90))  ? 0 : v(vdd)
+B4 6 90 V=IF( v(2,90)  > (v(vref,90) + v(voff,90)), 0, v(vdd,90) )
+*B2 vdd ct I=V(srst,90) > 3 ? 35U : -220U
+B2 vdd ct I=IF( V(srst,90) > 3, 35U, -220U )
+*B3 9 0 V=(v(6,90) > 3) ? v(diff,90) > 1 ? 0 : v(vdd)
+B3 9 90 V=IF( (IF((v(6,90) > 3),1,0) & IF((v(diff,90) > 1),1,0)), 0, v(vdd,90) ) 
+*B7 16 90 V=V(vdd,90)-1.5 > 1.25 ? 1.25 : V(vdd,90)-1.25 < 0 ? 0 :V(vdd,90)-1.25
+B7 16 90 V=IF( V(vdd,90)-1.5 > 1.25, 1.25, IF( V(vdd,90)-1.25 < 0, 0, V(vdd,90)-1.25 ) )
+*V7 16 vref
+V7 16 vref 0
+R6 vref 90 400
+R7 vref vdd 90k
+Q1x swc 13 swe _Q4_mod 
+.MODEL _Q4_mod NPN BF=50 RC=.25 RE=.25 TF=0
+R8 diff 90 10k
+D1 14 15 DN4148
+.MODEL DN4148 D BV=100V CJO=4PF IS=7E-09 M=.45 N=2 RS=.8
++ TT=6E-09 VJ=.6V
+D2 swe 14 DN4148
+V3 drc 15 DC=700m
+*B8 swe 14 I=v(5) > 2.5 ? 1m : -1m
+*** Threshold changed to 0.5, because of different(0,1 versus 0.3,3.5) output level of B-sources.
+B8 swe 14 I=IF( v(5,90) > 0.5, 1m, -1m )
+V4 voff 90 DC=2m
+C5 srst diff 10p
+*B1 4 90 V=(v(6,90) > 3) ? (v(diff,90) > -1) ? v(vdd) : 0
+B1 4 90 V=IF( (IF((v(6,90) > 3),1,0) & IF((v(diff,90) > -1),1,0)), v(vdd,90),0 ) 
+R10 vdd isns 10k
+.ENDS
+**********
+
+
+
+
+***** Example models *****
+.MODEL DN5819 D BV=5.33E+01 CJO=1.44E-10 EG=0.69
++ IBV=6.00E-04 IS=1.65E-05 M=.671 N=1.41 RS=4.47E-02
++ TT=7.20E-11 VJ=1.45 XTI=2
+*****
