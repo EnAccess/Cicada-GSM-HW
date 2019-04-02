@@ -112,5 +112,7 @@
   (lib (name Transformer_THT)(type KiCad)(uri ${KIPRJMOD}/../../../../../kicad-libs/kicad-footprints/Transformer_THT.pretty)(options "")(descr ""))
   (lib (name Valve)(type KiCad)(uri ${KIPRJMOD}/../../../../../kicad-libs/kicad-footprints/Valve.pretty)(options "")(descr ""))
   (lib (name Varistor)(type KiCad)(uri ${KIPRJMOD}/../../../../../kicad-libs/kicad-footprints/Varistor.pretty)(options "")(descr ""))
-  (lib (name edemame-custom-footprints)(type KiCad)(uri ${KIPRJMOD}//lib/edemame-custom-footprints.pretty)(options "")(descr ""))
+  (lib (name cicada-footprints)(type KiCad)(uri ${KIPRJMOD}/../lib/Cicada-footprints.pretty)(options "")(descr ""))
+  (lib (name sk-c793)(type KiCad)(uri ${KIPRJMOD}/../lib/sk-c793.pretty)(options "")(descr ""))
+  (lib (name sim7600)(type KiCad)(uri ${KIPRJMOD}/../lib/sim7600.pretty)(options "")(descr ""))
 )

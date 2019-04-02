@@ -182,4 +182,6 @@
   (lib (name Valve)(type Legacy)(uri ${KIPRJMOD}/../../../../../kicad-libs//kicad-symbols/Valve.lib)(options "")(descr ""))
   (lib (name Video)(type Legacy)(uri ${KIPRJMOD}/../../../../../kicad-libs//kicad-symbols/Video.lib)(options "")(descr ""))
   (lib (name sim7600)(type Legacy)(uri ${KIPRJMOD}/../lib/sim7600.lib)(options "")(descr ""))
+  (lib (name zx62d-b-5p8)(type Legacy)(uri ${KIPRJMOD}/../lib/zx62d-b-5p8.lib)(options "")(descr ""))
+  (lib (name SK-C793)(type Legacy)(uri ${KIPRJMOD}/../lib/SK-C793.lib)(options "")(descr ""))
 )
