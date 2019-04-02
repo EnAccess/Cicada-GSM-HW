@@ -5,10 +5,10 @@ EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "Ciacada 4G"
+Date "2019-04-02"
+Rev "0.1"
+Comp "Alexey Zaytsev / Okra Solar"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -133,11 +133,10 @@ L Device:R_Small R2
 U 1 1 5CA1C873
 P 15050 2750
 F 0 "R2" V 14650 2750 50  0000 C CNN
-F 1 "DNP" V 14750 2750 50  0000 C CNN
+F 1 "340k" V 14750 2750 50  0000 C CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" H 15050 2750 50  0001 C CNN
 F 3 "~" H 15050 2750 50  0001 C CNN
-F 4 "DNP" V 14850 2750 50  0000 C CNN "DNP"
-F 5 "0" H 0   0   50  0001 C CNN "SRC_USD_Q1000"
+F 4 "0" H 0   0   50  0001 C CNN "SRC_USD_Q1000"
 	1    15050 2750
 	0    1    1    0   
 $EndComp
@@ -1596,7 +1595,7 @@ $EndComp
 Text Notes 14250 2400 0    50   ~ 0
 VER_1 = 0
 Text Notes 15150 2400 0    50   ~ 0
-VER_2 = 0
+VER_2 = 1
 Connection ~ 6950 4550
 Wire Wire Line
 	6950 4550 7300 4550
