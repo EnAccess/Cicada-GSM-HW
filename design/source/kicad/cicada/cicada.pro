@@ -1,4 +1,4 @@
-update=Tue 02 Apr 2019 07:42:05 PM ICT
+update=Wed 03 Apr 2019 02:55:13 PM ICT
 version=1
 last_client=kicad
 [general]
@@ -32,6 +32,8 @@ TrackWidth1=0.25
 TrackWidth2=0.65
 ViaDiameter1=0.8
 ViaDrill1=0.4
+ViaDiameter2=0.7
+ViaDrill2=0.3
 dPairWidth1=0.2
 dPairGap1=0.25
 dPairViaGap1=0.25
@@ -68,10 +70,10 @@ Type=1
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
-PlotDirectoryName=cicada-schematics-v0.1.pdf
+PlotDirectoryName=
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=
 SpiceAjustPassiveValues=0
-LabSize=50
+LabSize=118
 ERC_TestSimilarLabels=1
