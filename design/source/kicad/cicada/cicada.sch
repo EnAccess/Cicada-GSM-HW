@@ -30,15 +30,15 @@ F 8 "0.0036" H 5750 -1350 50  0001 C CNN "SRC_USD_Q1000"
 	1    11650 8200
 	0    -1   -1   0   
 $EndComp
-Text Label 9150 8400 0    50   ~ 8
+Text Label 9150 8400 0    50   ~ 10
 SIM_VCC
-Text Label 9150 8600 0    50   ~ 8
+Text Label 9150 8600 0    50   ~ 10
 SIM_RST
-Text Label 9150 8800 0    50   ~ 8
+Text Label 9150 8800 0    50   ~ 10
 SIM_CLK
-Text Label 9150 8700 0    50   ~ 8
+Text Label 9150 8700 0    50   ~ 10
 SIM_IO
-Text Label 13650 2950 0    50   ~ 8
+Text Label 13650 2950 0    50   ~ 10
 3v3
 $Comp
 L power:GND #PWR02
@@ -51,15 +51,15 @@ F 3 "" H 13500 3050 50  0001 C CNN
 	1    13500 3050
 	0    1    1    0   
 $EndComp
-Text Label 13650 3150 0    50   ~ 8
+Text Label 13650 3150 0    50   ~ 10
 5v
-Text Label 15100 3250 2    50   ~ 8
+Text Label 15100 3250 2    50   ~ 10
 POWER
-Text Label 13500 3350 0    50   ~ 8
+Text Label 13500 3350 0    50   ~ 10
 SPI_MISO_3v3
-Text Label 13500 3450 0    50   ~ 8
+Text Label 13500 3450 0    50   ~ 10
 SPI_MOSI_3v3
-Text Label 15100 3350 2    50   ~ 8
+Text Label 15100 3350 2    50   ~ 10
 SPI_CLK_3v3
 $Comp
 L power:GND #PWR04
@@ -72,19 +72,19 @@ F 3 "" H 13500 3250 50  0001 C CNN
 	1    13500 3250
 	0    1    1    0   
 $EndComp
-Text Label 15100 3650 2    50   ~ 8
+Text Label 15100 3650 2    50   ~ 10
 nRST
-Text Label 13500 3650 0    50   ~ 8
+Text Label 13500 3650 0    50   ~ 10
 nCS_3G_3v3
-Text Label 15100 3550 2    50   ~ 8
+Text Label 15100 3550 2    50   ~ 10
 nCS_WIFI
-Text Label 14800 2950 2    50   ~ 8
+Text Label 14800 2950 2    50   ~ 10
 VER_1
-Text Label 14800 3050 2    50   ~ 8
+Text Label 14800 3050 2    50   ~ 10
 VER_2
-Text Label 15100 3450 2    50   ~ 8
+Text Label 15100 3450 2    50   ~ 10
 UART_RX_3v3
-Text Label 13500 3550 0    50   ~ 8
+Text Label 13500 3550 0    50   ~ 10
 UART_TX_3v3
 $Comp
 L power:GND #PWR03
@@ -1191,9 +1191,9 @@ Wire Wire Line
 	14600 5150 14500 5150
 Wire Wire Line
 	14600 4850 14600 4750
-Text Label 14600 4750 0    50   ~ 8
+Text Label 14600 4750 0    50   ~ 10
 3v3
-Text Label 14000 4750 0    50   ~ 8
+Text Label 14000 4750 0    50   ~ 10
 1v8
 $Comp
 L Device:R_Small R3
@@ -1222,11 +1222,11 @@ Connection ~ 14000 5150
 Wire Wire Line
 	14600 5150 15250 5150
 Connection ~ 14600 5150
-Text Label 15250 5150 2    50   ~ 8
+Text Label 15250 5150 2    50   ~ 10
 UART_TX_3v3
-Text Notes 14600 5350 0    50   ~ 8
+Text Notes 14600 5350 0    50   ~ 10
 Vth < 1.8v
-Text Label 13400 6000 0    50   ~ 8
+Text Label 13400 6000 0    50   ~ 10
 UART_TX_1v8
 Wire Wire Line
 	13400 5150 14000 5150
@@ -1265,9 +1265,9 @@ Wire Wire Line
 	14600 6000 14500 6000
 Wire Wire Line
 	14600 5700 14600 5600
-Text Label 14600 5600 0    50   ~ 8
+Text Label 14600 5600 0    50   ~ 10
 3v3
-Text Label 14000 5600 0    50   ~ 8
+Text Label 14000 5600 0    50   ~ 10
 1v8
 $Comp
 L Device:R_Small R5
@@ -1298,25 +1298,25 @@ Connection ~ 14000 6000
 Wire Wire Line
 	14600 6000 15250 6000
 Connection ~ 14600 6000
-Text Label 15250 6000 2    50   ~ 8
+Text Label 15250 6000 2    50   ~ 10
 UART_RX_3v3
-Text Notes 14600 6200 0    50   ~ 8
+Text Notes 14600 6200 0    50   ~ 10
 Vth < 1.8v
-Text Label 13400 5150 0    50   ~ 8
+Text Label 13400 5150 0    50   ~ 10
 UART_RX_1v8
 Wire Wire Line
 	13400 6000 14000 6000
-Text Notes 13150 5550 0    50   ~ 8
+Text Notes 13150 5550 0    50   ~ 10
 Swapped
 Wire Notes Line
 	13750 5150 13500 5500
 Wire Notes Line
 	13500 5500 13700 5900
-Text Label 2700 3300 0    50   ~ 8
+Text Label 2700 3300 0    50   ~ 10
 UART_RX_1v8
 Wire Wire Line
 	3250 3300 2700 3300
-Text Label 2700 3400 0    50   ~ 8
+Text Label 2700 3400 0    50   ~ 10
 UART_TX_1v8
 Wire Wire Line
 	3250 3400 2700 3400
@@ -1468,7 +1468,7 @@ F 3 "" H 6700 5000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6700 5000 6700 4900
-Text Label 7050 4500 2    50   ~ 8
+Text Label 7050 4500 2    50   ~ 10
 nRST
 $Comp
 L Device:Q_PMOS_GSD Q3
@@ -1521,9 +1521,9 @@ F 9 "0.0306" H 0   600 50  0001 C CNN "SRC_USD_Q1000"
 	1    14300 5050
 	0    1    1    0   
 $EndComp
-Text Notes 14400 2700 0    50   ~ 8
+Text Notes 14400 2700 0    50   ~ 10
 VER_1 = 0
-Text Notes 15300 2700 0    50   ~ 8
+Text Notes 15300 2700 0    50   ~ 10
 VER_2 = 1
 Connection ~ 6700 4500
 Wire Wire Line
@@ -1571,13 +1571,13 @@ NoConn ~ 3250 5300
 NoConn ~ 3250 5400
 NoConn ~ 4850 5200
 NoConn ~ 4850 5300
-Text Label 2850 2500 0    50   ~ 8
+Text Label 2850 2500 0    50   ~ 10
 SIM_VCC
-Text Label 2850 2300 0    50   ~ 8
+Text Label 2850 2300 0    50   ~ 10
 SIM_RST
-Text Label 2850 2400 0    50   ~ 8
+Text Label 2850 2400 0    50   ~ 10
 SIM_CLK
-Text Label 2850 2200 0    50   ~ 8
+Text Label 2850 2200 0    50   ~ 10
 SIM_IO
 Wire Wire Line
 	3250 2200 2850 2200
@@ -1597,11 +1597,11 @@ NoConn ~ 3250 1500
 NoConn ~ 3250 1400
 NoConn ~ 4850 2900
 NoConn ~ 4850 3000
-Text Notes 6750 4400 0    50   ~ 8
+Text Notes 6750 4400 0    50   ~ 10
 3v3 level
 Wire Wire Line
 	5950 1050 5950 1100
-Text Label 5950 1050 0    50   ~ 8
+Text Label 5950 1050 0    50   ~ 10
 5v
 Wire Wire Line
 	5950 1400 5950 1500
@@ -1766,7 +1766,7 @@ Wire Wire Line
 NoConn ~ 6750 9550
 Wire Wire Line
 	6750 9650 6450 9650
-Text Label 6450 9650 0    50   ~ 8
+Text Label 6450 9650 0    50   ~ 10
 1v8
 Wire Wire Line
 	6750 9350 6650 9350
@@ -2023,7 +2023,7 @@ Wire Wire Line
 Connection ~ 3600 9700
 Wire Wire Line
 	3600 9700 3600 9650
-Text Notes 2050 10600 0    50   ~ 8
+Text Notes 2050 10600 0    50   ~ 10
 Vout = 0.6 * (R1 + R2) / R2\n\nVout = 0.6 * (40.2 + 6.98) / 6.98\nVout = 4.06
 Wire Notes Line
 	3100 10250 3550 9850
@@ -2098,7 +2098,7 @@ F 3 "" H 2700 9850 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2700 9750 2700 9900
-Text Label 3350 9550 2    50   ~ 8
+Text Label 3350 9550 2    50   ~ 10
 FB
 Wire Wire Line
 	3350 9550 3100 9550
@@ -2121,9 +2121,9 @@ F 3 "" H 4500 9700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4500 9750 4500 9650
-Text Notes 1600 8950 0    50   ~ 8
+Text Notes 1600 8950 0    50   ~ 10
 Datasheet\nsuggests 4.7uF
-Text Notes 4800 8900 1    50   ~ 8
+Text Notes 4800 8900 1    50   ~ 10
 Datasheet\nsuggests 10uF
 $Comp
 L Device:L_Small L?
@@ -2241,7 +2241,7 @@ Wire Wire Line
 Connection ~ 3950 9350
 Wire Wire Line
 	3950 9650 3950 9700
-Text Label 900  9050 0    50   ~ 8
+Text Label 900  9050 0    50   ~ 10
 5v
 Wire Wire Line
 	4200 9650 4200 9750
@@ -2262,7 +2262,7 @@ F 3 "" H 4200 9700 50  0001 C CNN
 	1    4200 9750
 	1    0    0    -1  
 $EndComp
-Text Label 5250 8950 2    50   ~ 8
+Text Label 5250 8950 2    50   ~ 10
 V_BATT
 Connection ~ 5500 8950
 Wire Wire Line
@@ -2323,13 +2323,13 @@ Wire Wire Line
 	4850 1500 5300 1500
 Wire Wire Line
 	4850 1600 5300 1600
-Text Label 5300 1400 2    50   ~ 8
+Text Label 5300 1400 2    50   ~ 10
 MAIN_ANT
-Text Label 5300 1500 2    50   ~ 8
+Text Label 5300 1500 2    50   ~ 10
 GNSS_ANT
-Text Label 5300 1600 2    50   ~ 8
+Text Label 5300 1600 2    50   ~ 10
 AUX_ANT
-Text Label 8700 1150 0    50   ~ 8
+Text Label 8700 1150 0    50   ~ 10
 MAIN_ANT
 $Comp
 L Device:C_Small C6
@@ -2497,7 +2497,7 @@ F 3 "" H 11350 1650 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	11350 1650 11350 1350
-Text Notes 9500 1850 2    50   ~ 8
+Text Notes 9500 1850 2    50   ~ 10
 Test point\nPlace close to the chip
 Wire Wire Line
 	9650 2450 9650 2300
@@ -2588,7 +2588,7 @@ Wire Wire Line
 	11350 2800 11350 2500
 Wire Wire Line
 	8700 2300 9650 2300
-Text Label 8700 2300 0    50   ~ 8
+Text Label 8700 2300 0    50   ~ 10
 AUX_ANT
 Wire Wire Line
 	9550 4150 9550 4000
@@ -2670,7 +2670,7 @@ Wire Wire Line
 	10900 4000 11050 4000
 Wire Wire Line
 	10250 3450 10100 3450
-Text Label 10100 3450 0    50   ~ 8
+Text Label 10100 3450 0    50   ~ 10
 5v
 Wire Wire Line
 	10450 4000 10900 4000
@@ -2752,12 +2752,12 @@ $Comp
 L Power_Protection:USBLC6-2SC6 U2
 U 1 1 5D57D413
 P 10800 6150
-F 0 "U2" H 10950 6600 50  0000 C CNN
-F 1 "USBLC6-2SC6" H 11200 6500 50  0000 C CNN
+F 0 "U2" H 11200 6600 50  0000 C CNN
+F 1 "USBLC6-2SC6" H 11400 6500 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-6" H 10050 6550 50  0001 C CNN
 F 3 "http://www2.st.com/resource/en/datasheet/CD00050750.pdf" H 11000 6500 50  0001 C CNN
 F 4 "Yenji Elec" H 10800 6150 50  0001 C CNN "Manufacturer"
-F 5 "USBLC6-2SC6" H 10800 6150 50  0000 C CNN "MPN"
+F 5 "USBLC6-2SC6" H 11400 6400 50  0000 C CNN "MPN"
 F 6 "C323793" H 10800 6150 50  0001 C CNN "SRCPN"
 F 7 "0.0440" H 10800 6150 50  0001 C CNN "SRC_USD_Q1000"
 F 8 "lcsc" H 9200 3250 50  0001 C CNN "SOURCE"
@@ -2772,7 +2772,7 @@ Wire Wire Line
 	10300 6250 10200 6250
 Wire Wire Line
 	10300 6050 10200 6050
-Text Label 10000 6050 2    50   ~ 8
+Text Label 10000 6050 2    50   ~ 10
 D_N
 Wire Wire Line
 	11650 6050 11450 6050
@@ -2790,22 +2790,22 @@ $EndComp
 Wire Wire Line
 	10800 6700 10800 6650
 Wire Wire Line
-	9250 6000 9600 6000
-Text Label 9600 6000 2    50   ~ 8
+	9250 6000 9300 6000
+Text Label 9600 6000 2    50   ~ 10
 VBUS
-Text Label 10550 5600 0    50   ~ 8
+Text Label 10550 5600 0    50   ~ 10
 VBUS
 Wire Wire Line
 	10800 5650 10800 5600
 Wire Wire Line
 	10800 5600 10550 5600
-Text Label 2700 2900 0    50   ~ 8
+Text Label 2700 2900 0    50   ~ 10
 D_P
-Text Label 2700 3000 0    50   ~ 8
+Text Label 2700 3000 0    50   ~ 10
 D_N
 Wire Wire Line
 	2700 2800 3250 2800
-Text Label 2700 2800 0    50   ~ 8
+Text Label 2700 2800 0    50   ~ 10
 VBUS
 $Comp
 L Connector_Generic_MountingPin:Conn_01x04_MountingPin J7
@@ -2847,7 +2847,7 @@ Wire Wire Line
 	1750 4350 1750 4300
 Wire Wire Line
 	1600 4300 1750 4300
-Text Label 1800 4000 2    50   ~ 8
+Text Label 1800 4000 2    50   ~ 10
 1v8
 Wire Wire Line
 	1800 4000 1600 4000
@@ -2861,9 +2861,9 @@ Wire Wire Line
 	4850 4800 5450 4800
 Wire Wire Line
 	4850 4900 5450 4900
-Text Label 5450 4700 2    50   ~ 8
+Text Label 5450 4700 2    50   ~ 10
 SPI_MISO_1v8
-Text Label 5450 4800 2    50   ~ 8
+Text Label 5450 4800 2    50   ~ 10
 SPI_MOSI_1v8
 $Comp
 L Device:R_Small R18
@@ -2883,9 +2883,9 @@ Wire Wire Line
 	14600 6850 14500 6850
 Wire Wire Line
 	14600 6550 14600 6450
-Text Label 14600 6450 0    50   ~ 8
+Text Label 14600 6450 0    50   ~ 10
 3v3
-Text Label 14000 6450 0    50   ~ 8
+Text Label 14000 6450 0    50   ~ 10
 1v8
 $Comp
 L Device:R_Small R17
@@ -2914,7 +2914,7 @@ Connection ~ 14000 6850
 Wire Wire Line
 	14600 6850 15250 6850
 Connection ~ 14600 6850
-Text Notes 14600 7050 0    50   ~ 8
+Text Notes 14600 7050 0    50   ~ 10
 Vth < 1.8v
 Wire Wire Line
 	13400 6850 14000 6850
@@ -2955,9 +2955,9 @@ Wire Wire Line
 	14600 7750 14500 7750
 Wire Wire Line
 	14600 7450 14600 7350
-Text Label 14600 7350 0    50   ~ 8
+Text Label 14600 7350 0    50   ~ 10
 3v3
-Text Label 14000 7350 0    50   ~ 8
+Text Label 14000 7350 0    50   ~ 10
 1v8
 $Comp
 L Device:R_Small R20
@@ -2986,7 +2986,7 @@ Connection ~ 14000 7750
 Wire Wire Line
 	14600 7750 15250 7750
 Connection ~ 14600 7750
-Text Notes 14600 7950 0    50   ~ 8
+Text Notes 14600 7950 0    50   ~ 10
 Vth < 1.8v
 Wire Wire Line
 	13400 7750 14000 7750
@@ -3027,9 +3027,9 @@ Wire Wire Line
 	14600 8650 14500 8650
 Wire Wire Line
 	14600 8350 14600 8250
-Text Label 14600 8250 0    50   ~ 8
+Text Label 14600 8250 0    50   ~ 10
 3v3
-Text Label 14000 8250 0    50   ~ 8
+Text Label 14000 8250 0    50   ~ 10
 1v8
 $Comp
 L Device:R_Small R24
@@ -3058,7 +3058,7 @@ Connection ~ 14000 8650
 Wire Wire Line
 	14600 8650 15250 8650
 Connection ~ 14600 8650
-Text Notes 14600 8850 0    50   ~ 8
+Text Notes 14600 8850 0    50   ~ 10
 Vth < 1.8v
 Wire Wire Line
 	13400 8650 14000 8650
@@ -3081,9 +3081,9 @@ F 9 "0.0306" H 0   50  50  0001 C CNN "SRC_USD_Q1000"
 $EndComp
 Wire Wire Line
 	14300 8300 14300 8350
-Text Label 5450 4900 2    50   ~ 8
+Text Label 5450 4900 2    50   ~ 10
 SPI_CS_1v8
-Text Label 5450 4600 2    50   ~ 8
+Text Label 5450 4600 2    50   ~ 10
 SPI_CLK_1v8
 $Comp
 L Device:R_Small R27
@@ -3103,9 +3103,9 @@ Wire Wire Line
 	14600 9600 14500 9600
 Wire Wire Line
 	14600 9300 14600 9200
-Text Label 14600 9200 0    50   ~ 8
+Text Label 14600 9200 0    50   ~ 10
 3v3
-Text Label 14000 9200 0    50   ~ 8
+Text Label 14000 9200 0    50   ~ 10
 1v8
 $Comp
 L Device:R_Small R26
@@ -3134,7 +3134,7 @@ Connection ~ 14000 9600
 Wire Wire Line
 	14600 9600 15250 9600
 Connection ~ 14600 9600
-Text Notes 14600 9800 0    50   ~ 8
+Text Notes 14600 9800 0    50   ~ 10
 Vth < 1.8v
 Wire Wire Line
 	13400 9600 14000 9600
@@ -3157,21 +3157,21 @@ F 9 "0.0306" H 0   0   50  0001 C CNN "SRC_USD_Q1000"
 $EndComp
 Wire Wire Line
 	14300 9250 14300 9300
-Text Label 15250 6850 2    50   ~ 8
+Text Label 15250 6850 2    50   ~ 10
 SPI_MISO_3v3
-Text Label 15250 7750 2    50   ~ 8
+Text Label 15250 7750 2    50   ~ 10
 SPI_MOSI_3v3
-Text Label 15250 8650 2    50   ~ 8
+Text Label 15250 8650 2    50   ~ 10
 SPI_CLK_3v3
-Text Label 15250 9600 2    50   ~ 8
+Text Label 15250 9600 2    50   ~ 10
 nCS_3G_3v3
-Text Label 13400 9600 0    50   ~ 8
+Text Label 13400 9600 0    50   ~ 10
 SPI_CS_1v8
-Text Label 13400 7750 0    50   ~ 8
+Text Label 13400 7750 0    50   ~ 10
 SPI_MOSI_1v8
-Text Label 13400 6850 0    50   ~ 8
+Text Label 13400 6850 0    50   ~ 10
 SPI_MISO_1v8
-Text Label 13400 8650 0    50   ~ 8
+Text Label 13400 8650 0    50   ~ 10
 SPI_CLK_1v8
 Wire Wire Line
 	3600 9350 3400 9350
@@ -3243,7 +3243,7 @@ Wire Wire Line
 Connection ~ 1500 9050
 Wire Wire Line
 	1500 9050 2700 9050
-Text Label 1900 9450 0    50   ~ 8
+Text Label 1900 9450 0    50   ~ 10
 POWER
 Wire Wire Line
 	1900 9450 2150 9450
@@ -3281,13 +3281,13 @@ F 3 "" H 2150 9700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2150 9700 2150 9750
-Text Notes 13600 1350 0    50   ~ 8
+Text Notes 13600 1350 0    50   ~ 10
 The version resistor forms a voltage divider with a\n40.2K resistor on the host board. The host then can\nread the version as an analog voltage value.\nCheck out the table.
 Wire Wire Line
 	15050 2950 15350 2950
 Wire Wire Line
 	15550 2950 15350 2950
-Text Label 15550 2950 2    50   ~ 8
+Text Label 15550 2950 2    50   ~ 10
 3v3
 Wire Wire Line
 	15300 3200 15300 3150
@@ -3644,19 +3644,6 @@ F 3 "~" H 1200 6400 50  0001 C CNN
 	1    1200 6400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1200 6500 1200 6600
-$Comp
-L power:GND #PWR0101
-U 1 1 5CA81F76
-P 1200 6600
-F 0 "#PWR0101" H 1200 6350 50  0001 C CNN
-F 1 "GND" H 1205 6423 50  0000 C CNN
-F 2 "" H 1200 6600 50  0001 C CNN
-F 3 "" H 1200 6600 50  0001 C CNN
-	1    1200 6600
-	1    0    0    -1  
-$EndComp
 $Comp
 L Mechanical:MountingHole_Pad H2
 U 1 1 5CA842DB
@@ -3668,20 +3655,7 @@ F 3 "~" H 2200 6400 50  0001 C CNN
 	1    2200 6400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2200 6500 2200 6600
-$Comp
-L power:GND #PWR0102
-U 1 1 5CA842E2
-P 2200 6600
-F 0 "#PWR0102" H 2200 6350 50  0001 C CNN
-F 1 "GND" H 2205 6423 50  0000 C CNN
-F 2 "" H 2200 6600 50  0001 C CNN
-F 3 "" H 2200 6600 50  0001 C CNN
-	1    2200 6600
-	1    0    0    -1  
-$EndComp
-Text Label 8600 4000 0    50   ~ 8
+Text Label 8600 4000 0    50   ~ 10
 GNSS_ANT
 Wire Wire Line
 	10200 6050 10200 6250
@@ -3695,11 +3669,11 @@ Wire Wire Line
 Connection ~ 11450 6050
 Wire Wire Line
 	11450 6050 11300 6050
-Text Label 11650 6050 0    50   ~ 8
+Text Label 11650 6050 0    50   ~ 10
 D_P
-Text Label 9600 6200 2    50   ~ 8
+Text Label 9600 6200 2    50   ~ 10
 D_P
-Text Label 9600 6300 2    50   ~ 8
+Text Label 9600 6300 2    50   ~ 10
 D_N
 $Comp
 L power:GND #PWR0103
@@ -3748,16 +3722,12 @@ $EndComp
 Connection ~ 4800 9350
 Wire Notes Line width 24
 	8500 7300 8500 11200
-Text Notes 2450 8050 0    236  ~ 12
+Text Notes 2450 8050 0    236  ~ 47
 Power supply
 Wire Notes Line width 24
 	12700 3800 16050 3800
 Wire Notes Line width 24
 	12700 500  12700 9950
-Text Notes 13100 850  0    236  ~ 12
-Host connector
-Text Notes 13050 4600 0    236  ~ 12
-Level shifters\n1.8v <-> 3.3v
 Wire Wire Line
 	9550 9100 9550 9300
 Wire Wire Line
@@ -3871,20 +3841,53 @@ Wire Wire Line
 	9150 8600 9550 8600
 Wire Notes Line width 24
 	500  7300 12700 7300
-Text Notes 9200 7800 0    236  ~ 12
+Text Notes 9200 7800 0    236  ~ 47
 USIM Card
 Wire Notes Line width 24
 	7650 7300 7650 500 
-Text Notes 9050 850  0    236  ~ 12
+Text Notes 9050 850  0    236  ~ 47
 Antennas
 Wire Notes Line width 24
 	7650 4800 12700 4800
-Text Notes 9550 5150 0    236  ~ 12
-USB
-Text Notes 8850 5400 0    118  ~ 12
-(Optional, for FW update)
-Text Notes 3350 1050 0    236  ~ 12
+Text Notes 3350 1050 0    236  ~ 47
 SIM7600
 Wire Notes Line width 24
 	7650 5650 500  5650
+Wire Wire Line
+	9400 5750 9300 5750
+Wire Wire Line
+	9300 5750 9300 6000
+Connection ~ 9300 6000
+Wire Wire Line
+	9300 6000 9600 6000
+Wire Wire Line
+	9600 5750 9800 5750
+$Comp
+L Device:D_Schottky_Small_ALT D10
+U 1 1 5DB55DC0
+P 9500 5750
+F 0 "D10" H 9500 5447 50  0000 C CNN
+F 1 "SS14" H 9500 5540 50  0000 C CNN
+F 2 "Diode_SMD:D_SMA" V 9500 5750 50  0001 C CNN
+F 3 "~" V 9500 5750 50  0001 C CNN
+F 4 "MDD" H 9500 5750 50  0001 C CNN "Manufacturer"
+F 5 "SS14F" H 9500 5633 50  0000 C CNN "MPN"
+F 6 "C64880" H 9500 5750 50  0001 C CNN "SRCPN"
+F 7 "lcsc" H 0   0   50  0001 C CNN "SOURCE"
+F 8 "0.0080" H 0   0   50  0001 C CNN "SRC_USD_Q1000"
+	1    9500 5750
+	-1   0    0    1   
+$EndComp
+Text Label 9800 5750 2    50   ~ 10
+5v
+Text Notes 8850 5400 0    118  ~ 24
+(Optional, for FW update)
+Text Notes 9550 5150 0    236  ~ 47
+USB
+Text Notes 13050 4600 0    236  ~ 47
+Level shifters\n1.8v <-> 3.3v
+Text Notes 13100 850  0    236  ~ 47
+Host connector
+NoConn ~ 1200 6500
+NoConn ~ 2200 6500
 $EndSCHEMATC
