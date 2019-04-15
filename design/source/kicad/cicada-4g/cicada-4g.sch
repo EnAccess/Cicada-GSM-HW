@@ -1,5 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:cicada-cache
+LIBS:cicada-4g-cache
 EELAYER 29 0
 EELAYER END
 $Descr A3 16535 11693
