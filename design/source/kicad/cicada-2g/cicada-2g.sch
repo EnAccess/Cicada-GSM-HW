@@ -1222,7 +1222,7 @@ Connection ~ 14000 5150
 Wire Wire Line
 	14600 5150 15250 5150
 Connection ~ 14600 5150
-Text Label 15250 5150 2    50   ~ 10
+Text Label 15250 6000 2    50   ~ 10
 UART_TX_3v3
 Text Notes 14600 5350 0    50   ~ 10
 Vth < 1.8v
@@ -1298,7 +1298,7 @@ Connection ~ 14000 6000
 Wire Wire Line
 	14600 6000 15250 6000
 Connection ~ 14600 6000
-Text Label 15250 6000 2    50   ~ 10
+Text Label 15250 5150 2    50   ~ 10
 UART_RX_3v3
 Text Notes 14600 6200 0    50   ~ 10
 Vth < 1.8v
@@ -1306,12 +1306,6 @@ Text Label 13400 5150 0    50   ~ 10
 UART_RX_2v8
 Wire Wire Line
 	13400 6000 14000 6000
-Text Notes 13150 5550 0    50   ~ 10
-Swapped
-Wire Notes Line
-	13750 5150 13500 5500
-Wire Notes Line
-	13500 5500 13700 5900
 Text Label 2000 2950 0    50   ~ 10
 UART_RX_2v8
 Wire Wire Line
@@ -1473,8 +1467,6 @@ Wire Wire Line
 	4150 2750 4550 2750
 Wire Wire Line
 	5550 2950 5550 3000
-Text Label 5550 2950 0    50   ~ 10
-5v
 Wire Wire Line
 	5550 3300 5550 3400
 $Comp
@@ -1500,7 +1492,7 @@ L Device:R_Small R10
 U 1 1 5CA6DA64
 P 5550 3500
 F 0 "R10" H 5609 3547 50  0000 L CNN
-F 1 "220R" H 5609 3454 50  0000 L CNN
+F 1 "470R" H 5609 3454 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" H 5550 3500 50  0001 C CNN
 F 3 "~" H 5550 3500 50  0001 C CNN
 F 4 "0.0015" H -650 1850 50  0001 C CNN "SRC_USD_Q1000"
@@ -2838,4 +2830,19 @@ Wire Wire Line
 Wire Wire Line
 	7100 9350 6750 9350
 Connection ~ 6750 9350
+Text Label 5550 2950 2    50   ~ 10
+V_BATT
+$Comp
+L Graphic:SYM_Hot_Small LOGO1
+U 1 1 5CEA13D2
+P 13100 6950
+F 0 "LOGO1" H 13100 7090 50  0001 C CNN
+F 1 "SYM_Hot_Small" H 13100 6825 50  0001 C CNN
+F 2 "cicada-footprints:okra_logo_copper_2" H 13100 6775 50  0001 C CNN
+F 3 "~" H 13130 6750 50  0001 C CNN
+	1    13100 6950
+	1    0    0    -1  
+$EndComp
+Text Notes 13250 7000 0    118  ~ 0
+Okra logo
 $EndSCHEMATC
