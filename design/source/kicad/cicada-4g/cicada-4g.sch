@@ -1222,7 +1222,7 @@ Connection ~ 14000 5150
 Wire Wire Line
 	14600 5150 15250 5150
 Connection ~ 14600 5150
-Text Label 15250 5150 2    50   ~ 10
+Text Label 15250 6000 2    50   ~ 10
 UART_TX_3v3
 Text Notes 14600 5350 0    50   ~ 10
 Vth < 1.8v
@@ -1298,7 +1298,7 @@ Connection ~ 14000 6000
 Wire Wire Line
 	14600 6000 15250 6000
 Connection ~ 14600 6000
-Text Label 15250 6000 2    50   ~ 10
+Text Label 15250 5150 2    50   ~ 10
 UART_RX_3v3
 Text Notes 14600 6200 0    50   ~ 10
 Vth < 1.8v
@@ -1306,12 +1306,6 @@ Text Label 13400 5150 0    50   ~ 10
 UART_RX_1v8
 Wire Wire Line
 	13400 6000 14000 6000
-Text Notes 13150 5550 0    50   ~ 10
-Swapped
-Wire Notes Line
-	13750 5150 13500 5500
-Wire Notes Line
-	13500 5500 13700 5900
 Text Label 2700 3300 0    50   ~ 10
 UART_RX_1v8
 Wire Wire Line
@@ -1628,7 +1622,7 @@ L Device:R_Small R10
 U 1 1 5CA6DA64
 P 5950 1600
 F 0 "R10" H 6009 1647 50  0000 L CNN
-F 1 "220R" H 6009 1554 50  0000 L CNN
+F 1 "470R" H 6009 1554 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" H 5950 1600 50  0001 C CNN
 F 3 "~" H 5950 1600 50  0001 C CNN
 F 4 "0.0015" H -250 -50 50  0001 C CNN "SRC_USD_Q1000"
