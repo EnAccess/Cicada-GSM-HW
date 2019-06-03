@@ -77,6 +77,12 @@ Both Cicada 2G and Cicada 4G use single-chip SMPS to convert 5v down to 4v requi
 
 ![](https://github.com/EnAccess/Cicada-HW/blob/master/design/doc/figures/Power.png)
 
+## Level shifters.
+
+The SIM7600 module (Cicada 4G) operates at 1.8v logic level, while the SIM800C module (Cicada 2G) operates at 2.8v. In both vases, simple discrete level shifters are used to make the logic levels compatible with more common 3.3v.
+
+![](https://github.com/EnAccess/Cicada-HW/blob/master/design/doc/figures/Level-shifters.png)
+
 
 
 
