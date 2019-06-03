@@ -65,8 +65,17 @@ The host interface provides provides:
 - RESET pin - drive low to reset, drive at 1.8 - 3.3v during normal operation. Is not implemented on the 2G board, since the SIM800C chip does not have a RESET line.
 
 
+## Sim card slot
 
+![](https://github.com/EnAccess/Cicada-HW/blob/master/design/doc/figures/Sim-card.png)
 
+Same for Cicada 2G and Cicada 4G boards.
+
+## Power
+
+Both Cicada 2G and Cicada 4G use single-chip SMPS to convert 5v down to 4v required by both SIM7600 and SIM800C modules.
+
+![](https://github.com/EnAccess/Cicada-HW/blob/master/design/doc/figures/Power.png)
 
 
 
