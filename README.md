@@ -55,7 +55,7 @@ The schamtics is lagely based on the `SIM7600 Series_Hardware Design_V1.02` and 
 
 ![](https://github.com/EnAccess/Cicada-HW/blob/master/design/doc/figures/Host-interface.png)
 
-The host interface provides provides:
+The host interface provides:
 - 5V - power
 - 3.3v - logiv level VCC reference.
 - VER_1 and VER_2 - version pins.
@@ -63,6 +63,13 @@ The host interface provides provides:
 - SPI - only available on the 4G board as an option. Normally, UART can be used for communication.
 - POWER enable pin - drive hogh to enable power.
 - RESET pin - drive low to reset, drive at 1.8 - 3.3v during normal operation. Is not implemented on the 2G board, since the SIM800C chip does not have a RESET line.
+
+## Version information
+
+The host interface provides a way for the host to detect the presence of a Cicada board, and distinguish between different boards:
+
+![](https://github.com/EnAccess/Cicada-HW/blob/master/design/doc/figures/Host-interface-versioning.png)
+
 
 
 ## Sim card slot
@@ -82,6 +89,24 @@ Both Cicada 2G and Cicada 4G use single-chip SMPS to convert 5v down to 4v requi
 The SIM7600 module (Cicada 4G) operates at 1.8v logic level, while the SIM800C module (Cicada 2G) operates at 2.8v. In both vases, simple discrete level shifters are used to make the logic levels compatible with more common 3.3v.
 
 ![](https://github.com/EnAccess/Cicada-HW/blob/master/design/doc/figures/Level-shifters.png)
+
+## Antennas
+
+Antenna circuitry compied from the simcomm reference documentation:
+
+### Cicada 4G - Main and Auxiliary antennas, plus a GPS antenna.
+![](https://github.com/EnAccess/Cicada-HW/blob/master/design/doc/figures/Antennas-7600.png)
+
+
+### Cicada 2G - Only the main antenna.
+![](https://github.com/EnAccess/Cicada-HW/blob/master/design/doc/figures/Antennas-800C.png)
+
+## USB
+
+On both Cicada 2G and Cicada 4G, USB can be used to update the modem firmware.
+The USB connector can also provide 5V power to the board during the process.
+
+![](https://github.com/EnAccess/Cicada-HW/blob/master/design/doc/figures/USB.png)
 
 
 
