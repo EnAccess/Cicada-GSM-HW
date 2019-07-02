@@ -47,9 +47,9 @@ To make sure we are using the same version of standard KiCAD libraries, we've ma
 
 You might want to remove "global" kicad libraries from your settings to avoid possible version mismatches.
 
-# A qiuck look at the schematics.
+# A quick look at the schematics.
 
-The schamtics is lagely based on the `SIM7600 Series_Hardware Design_V1.02` and `SIM800C_Hardware_Design_V1.05` documents from simcomm, both found in the documentation folder. Most design festures are shared between the 2G and 4G boards.
+The schematics are lagely based on the `SIM7600 Series_Hardware Design_V1.02` and `SIM800C_Hardware_Design_V1.05` documents from Simcom, both found in the documentation folder. Most design festures are shared between the 2G and 4G boards.
 
 ## Host interface
 
@@ -71,7 +71,6 @@ The host interface provides a way for the host to detect the presence of a Cicad
 ![](https://github.com/EnAccess/Cicada-HW/blob/master/design/doc/figures/Host-interface-versioning.png)
 
 
-
 ## Sim card slot
 
 ![](https://github.com/EnAccess/Cicada-HW/blob/master/design/doc/figures/Sim-card.png)
@@ -84,7 +83,7 @@ Both Cicada 2G and Cicada 4G use single-chip SMPS to convert 5v down to 4v requi
 
 ![](https://github.com/EnAccess/Cicada-HW/blob/master/design/doc/figures/Power.png)
 
-## Level shifters.
+## Level shifters
 
 The SIM7600 module (Cicada 4G) operates at 1.8v logic level, while the SIM800C module (Cicada 2G) operates at 2.8v. In both vases, simple discrete level shifters are used to make the logic levels compatible with more common 3.3v.
 
@@ -94,11 +93,11 @@ The SIM7600 module (Cicada 4G) operates at 1.8v logic level, while the SIM800C m
 
 Antenna circuitry compied from the simcomm reference documentation:
 
-### Cicada 4G - Main and Auxiliary antennas, plus a GPS antenna.
+### Cicada 4G - Main and Auxiliary antennas, plus a GPS antenna
 ![](https://github.com/EnAccess/Cicada-HW/blob/master/design/doc/figures/Antennas-7600.png)
 
 
-### Cicada 2G - Only the main antenna.
+### Cicada 2G - Only the main antenna
 ![](https://github.com/EnAccess/Cicada-HW/blob/master/design/doc/figures/Antennas-800C.png)
 
 ## USB
