@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:cicada-2g-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
@@ -2432,7 +2432,7 @@ U 1 1 5CA5A765
 P 1200 6400
 F 0 "H1" H 1300 6449 50  0000 L CNN
 F 1 "MountingHole_Pad" H 1300 6356 50  0000 L CNN
-F 2 "MountingHole_3.2mm_M3_ISO14580_Pad" H 1200 6400 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO14580_Pad" H 1200 6400 50  0001 C CNN
 F 3 "~" H 1200 6400 50  0001 C CNN
 	1    1200 6400
 	1    0    0    -1  
@@ -2443,7 +2443,7 @@ U 1 1 5CA842DB
 P 2200 6400
 F 0 "H2" H 2300 6449 50  0000 L CNN
 F 1 "MountingHole_Pad" H 2300 6356 50  0000 L CNN
-F 2 "MountingHole_3.2mm_M3_ISO14580_Pad" H 2200 6400 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO14580_Pad" H 2200 6400 50  0001 C CNN
 F 3 "~" H 2200 6400 50  0001 C CNN
 	1    2200 6400
 	1    0    0    -1  
@@ -2737,7 +2737,6 @@ F 3 "http://simcom.ee/documents/SIM800C/SIM800C_Hardware_Design_V1.05.pdf" H -13
 	1    3350 3250
 	1    0    0    -1  
 $EndComp
-NoConn ~ 2550 3450
 NoConn ~ 2550 3650
 NoConn ~ 2550 4050
 NoConn ~ 2550 4150
@@ -2845,4 +2844,47 @@ F 3 "~" H 13130 6750 50  0001 C CNN
 $EndComp
 Text Notes 13250 7000 0    118  ~ 0
 Okra logo
+$Comp
+L Device:R R13
+U 1 1 5D94B048
+P 2250 3450
+F 0 "R13" V 2043 3450 50  0000 C CNN
+F 1 "0R" V 2134 3450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 2180 3450 50  0001 C CNN
+F 3 "~" H 2250 3450 50  0001 C CNN
+	1    2250 3450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2550 3450 2400 3450
+$Comp
+L power:GND #PWR0102
+U 1 1 5D95CA6E
+P 2000 3600
+F 0 "#PWR0102" H 2000 3350 50  0001 C CNN
+F 1 "GND" H 2005 3427 50  0000 C CNN
+F 2 "" H 2000 3600 50  0001 C CNN
+F 3 "" H 2000 3600 50  0001 C CNN
+	1    2000 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 3600 2000 3450
+Wire Wire Line
+	2000 3450 2100 3450
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5D96E138
+P 4950 3550
+F 0 "TP1" H 5008 3668 50  0000 L CNN
+F 1 "TestPoint" H 5008 3577 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 5150 3550 50  0001 C CNN
+F 3 "~" H 5150 3550 50  0001 C CNN
+	1    4950 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 3550 4950 3750
+Wire Wire Line
+	4950 3750 4150 3750
 $EndSCHEMATC
