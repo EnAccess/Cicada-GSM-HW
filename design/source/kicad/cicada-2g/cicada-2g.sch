@@ -2503,8 +2503,6 @@ Wire Notes Line width 24
 Text Notes 2450 8050 0    236  ~ 0
 Power supply
 Wire Notes Line width 24
-	12700 3800 16050 3800
-Wire Notes Line width 24
 	12700 500  12700 9950
 Wire Wire Line
 	9550 9100 9550 9300
@@ -2625,8 +2623,6 @@ Wire Notes Line width 24
 	7650 7300 7650 500 
 Text Notes 9050 850  0    236  ~ 0
 Antennas
-Wire Notes Line width 24
-	7650 4800 12700 4800
 Text Notes 2600 1650 0    236  ~ 0
 SIM800C
 Wire Notes Line width 24
@@ -2658,10 +2654,6 @@ F 8 "0.0080" H 0   0   50  0001 C CNN "SRC_USD_Q1000"
 $EndComp
 Text Label 9800 5750 2    50   ~ 10
 5v
-Text Notes 8850 5400 0    118  ~ 0
-(Optional, for FW update)
-Text Notes 9550 5150 0    236  ~ 0
-USB
 Text Notes 13050 4600 0    236  ~ 0
 Level shifters\n2.8v <-> 3.3v
 Text Notes 13100 850  0    236  ~ 0
@@ -2887,4 +2879,50 @@ Wire Wire Line
 	4950 3550 4950 3750
 Wire Wire Line
 	4950 3750 4150 3750
+Wire Notes Line width 24
+	12700 3800 16050 3800
+Wire Notes Line width 24
+	7600 3800 12650 3800
+Text Notes 8800 4400 0    118  ~ 0
+(Optional, for FW update)
+Text Notes 9500 4150 0    236  ~ 0
+USB
+$Comp
+L Device:D_Small_ALT D5
+U 1 1 5DA09083
+P 9500 5250
+F 0 "D5" H 9500 5045 50  0000 C CNN
+F 1 "M2" H 9500 5136 50  0000 C CNN
+F 2 "Diode_SMD:D_SMA" V 9500 5250 50  0001 C CNN
+F 3 "~" V 9500 5250 50  0001 C CNN
+	1    9500 5250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9300 5750 9300 5250
+Wire Wire Line
+	9300 5250 9400 5250
+Connection ~ 9300 5750
+$Comp
+L Device:R_Small R?
+U 1 1 5DA1AAA4
+P 9950 5250
+AR Path="/5C2BA648/5DA1AAA4" Ref="R?"  Part="1" 
+AR Path="/5C38341E/5DA1AAA4" Ref="R?"  Part="1" 
+AR Path="/5C150E9A/5DA1AAA4" Ref="R?"  Part="1" 
+AR Path="/5DA1AAA4" Ref="R14"  Part="1" 
+F 0 "R14" H 9891 5203 50  0000 R CNN
+F 1 "6.98k" H 9891 5296 50  0000 R CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 9950 5250 50  0001 C CNN
+F 3 "~" H 9950 5250 50  0001 C CNN
+F 4 "0.0015" H 4050 -2450 50  0001 C CNN "SRC_USD_Q1000"
+	1    9950 5250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9850 5250 9600 5250
+Text Label 10400 5250 2    50   ~ 10
+POWER
+Wire Wire Line
+	10400 5250 10050 5250
 $EndSCHEMATC
