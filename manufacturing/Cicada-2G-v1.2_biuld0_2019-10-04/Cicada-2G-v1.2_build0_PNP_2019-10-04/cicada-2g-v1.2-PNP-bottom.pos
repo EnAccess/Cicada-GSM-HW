@@ -1,0 +1,7 @@
+### Module positions - created on Пт 04 окт 2019 15:26:37 ###
+### Printed by Pcbnew version kicad 5.1.4-e60b266~84~ubuntu19.04.1
+## Unit = mm, Angle = deg.
+## Side : bottom
+# Ref     Val       Package                                   PosX       PosY       Rot  Side
+J5        IPX       U.FL_Molex_MCRF_73412-0110_Vertical     1.3900   -43.6900   90.0000  bottom
+## End
