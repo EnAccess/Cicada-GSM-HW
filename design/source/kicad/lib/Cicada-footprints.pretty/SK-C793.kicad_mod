@@ -1,4 +1,4 @@
-(module SK-C793 (layer F.Cu) (tedit 5DECA08E)
+(module SK-C793 (layer F.Cu) (tedit 5DECAE86)
   (fp_text reference REF** (at -1.75 9.5) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
