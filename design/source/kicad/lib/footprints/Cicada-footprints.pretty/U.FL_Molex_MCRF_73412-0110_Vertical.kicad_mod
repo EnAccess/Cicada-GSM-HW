@@ -1,8 +1,8 @@
-(module U.FL_Molex_MCRF_73412-0110_Vertical (layer F.Cu) (tedit 5CA34975)
+(module U.FL_Molex_MCRF_73412-0110_Vertical (layer F.Cu) (tedit 5DECDD77)
   (descr "Molex Microcoaxial RF Connectors (MCRF), mates Hirose U.FL, (http://www.molex.com/pdm_docs/sd/734120110_sd.pdf)")
   (tags "mcrf hirose ufl u.fl microcoaxial")
   (attr smd)
-  (fp_text reference J4 (at 5.5 -5.5) (layer F.SilkS)
+  (fp_text reference J4 (at 0 -2.5) (layer F.SilkS)
     (effects (font (size 0.7 0.8) (thickness 0.12)))
   )
   (fp_text value IPX (at 0 -3.302) (layer F.Fab)
@@ -40,7 +40,7 @@
   (pad 2 smd rect (at 0 -1.5) (size 1 1) (layers F.Cu F.Paste F.Mask))
   (pad 2 smd rect (at 1.475 0) (size 1.05 2.2) (layers F.Cu F.Paste F.Mask))
   (pad 2 smd rect (at -1.475 0) (size 1.05 2.2) (layers F.Cu F.Paste F.Mask))
-  (model /home/xl0/work/TM/Okra/okra-cicada-hardware/design/source/kicad/lib/U.FL-R-SMT-1.stp
+  (model ${KIPRJMOD}/../lib/3D_Shapes/U.FL-R-SMT-1.stp
     (offset (xyz -55.25 -1 22.5))
     (scale (xyz 1 1 1))
     (rotate (xyz 90 0 0))

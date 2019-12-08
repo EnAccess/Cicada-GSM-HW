@@ -1,4 +1,4 @@
-(module SK-C793 (layer F.Cu) (tedit 5DECAE86)
+(module SK-C793 (layer F.Cu) (tedit 5DECDCCA)
   (fp_text reference REF** (at -1.75 9.5) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
@@ -21,7 +21,7 @@
   (pad 9 smd rect (at 8.35 6.605) (size 1.1 2.6) (layers F.Cu F.Paste F.Mask))
   (pad 10 smd rect (at -8.1 6.605) (size 1.1 2.6) (layers F.Cu F.Paste F.Mask))
   (pad 11 smd rect (at -8.1 -6.075) (size 1.1 2.6) (layers F.Cu F.Paste F.Mask))
-  (model ${KIPRJMOD}/../lib/Cicada_3D_Shapes/sk-c793.step
+  (model ${KIPRJMOD}/../lib/3D_Shapes/sk-c793.step
     (offset (xyz -8 8.699999999999999 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

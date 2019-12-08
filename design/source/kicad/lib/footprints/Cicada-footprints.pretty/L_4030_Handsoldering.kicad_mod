@@ -1,4 +1,4 @@
-(module L_4030_Handsoldering (layer F.Cu) (tedit 5DECA444)
+(module L_4030_Handsoldering (layer F.Cu) (tedit 5DECDCBA)
   (descr "Inductor, Taiyo Yuden, NR series, Taiyo-Yuden_NR-40xx, 4.0mmx4.0mm")
   (tags "inductor taiyo-yuden nr smd")
   (attr smd)
@@ -31,7 +31,7 @@
   (fp_line (start 3.25 -2.25) (end -3.25 -2.25) (layer F.CrtYd) (width 0.05))
   (pad 1 smd rect (at -1.9 0) (size 2.2 3.9) (layers F.Cu F.Paste F.Mask))
   (pad 2 smd rect (at 1.9 0) (size 2.2 3.9) (layers F.Cu F.Paste F.Mask))
-  (model ${KIPRJMOD}/../lib/Cicada_3D_Shapes/ASPI-4030S.STEP
+  (model ${KIPRJMOD}/../lib/3D_Shapes/ASPI-4030S.STEP
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz -90 0 -90))

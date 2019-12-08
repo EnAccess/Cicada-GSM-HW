@@ -1,4 +1,4 @@
-(module ZX62D-B-5PA8 (layer F.Cu) (tedit 5DECAB8B)
+(module ZX62D-B-5PA8 (layer F.Cu) (tedit 5DECDD01)
   (descr USB)
   (solder_mask_margin 0.1)
   (solder_paste_margin -0.05)
@@ -59,7 +59,7 @@
   (pad 5 smd rect (at 1.3 -2.675) (size 0.4 1.35) (layers F.Cu F.Paste F.Mask))
   (pad 6 thru_hole oval (at -2.425 -2.9) (size 1.05 1.25) (drill oval 0.65 0.85) (layers *.Cu *.Mask))
   (pad 6 thru_hole oval (at 2.425 -2.9) (size 1.05 1.25) (drill oval 0.65 0.85) (layers *.Cu *.Mask))
-  (model ${KIPRJMOD}/../lib/Cicada_3D_Shapes/zx62d-b-5p8.step
+  (model ${KIPRJMOD}/../lib/3D_Shapes/zx62d-b-5p8.step
     (offset (xyz 0 -0.5 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 180))

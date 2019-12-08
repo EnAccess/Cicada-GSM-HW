@@ -113,5 +113,5 @@
   (lib (name Valve)(type KiCad)(uri ${KIPRJMOD}/../../../../../kicad-libs/kicad-footprints/Valve.pretty)(options "")(descr ""))
   (lib (name Varistor)(type KiCad)(uri ${KIPRJMOD}/../../../../../kicad-libs/kicad-footprints/Varistor.pretty)(options "")(descr ""))
   (lib (name RF_GSM)(type KiCad)(uri ${KIPRJMOD}/../../../../../kicad-libs/kicad-footprints/RF_GSM.pretty)(options "")(descr ""))
-  (lib (name cicada-footprints)(type KiCad)(uri ${KIPRJMOD}/../lib/Cicada-footprints.pretty)(options "")(descr ""))
+  (lib (name cicada-footprints)(type KiCad)(uri ${KIPRJMOD}/../lib/footprints/Cicada-footprints.pretty)(options "")(descr ""))
 )
