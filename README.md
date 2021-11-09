@@ -19,7 +19,7 @@ The .zip contains the PCB Gerber/drill files, the BOM, and assembly instructions
 
 ## Source files
 
-If you'd like to take a look at the schematics and PCB layout, first, make sure you have a fresh version of KiCAD. It's a free and open source electronics design tool, and can be downloaded from http://kicad-pcb.org. Make sure you are not using an old version that some Linux distributions might be still shipping.
+If you'd like to take a look at the schematics and PCB layout, first, make sure you have a fresh version of KiCAD. It's a free and open source electronics design tool, and can be downloaded from http://kicad.org. Make sure you are not using an old version that some Linux distributions might be still shipping.
 
 ### File structure
 
