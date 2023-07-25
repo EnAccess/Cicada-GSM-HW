@@ -1,0 +1,15 @@
+
+- 4 layer FR-4
+
+- 1oz outer copper
+- 1oz or 0.5oz inner copper
+
+Impedance controlleed 50R SE lines:
+Co-planar line
+W=0.55mm
+S=0.16mm
+H=1.5mm
+Er = 4.5 - 4.7, but can prob be wider
+
+- total finished thickness: 1.6mm±0.2mm
+

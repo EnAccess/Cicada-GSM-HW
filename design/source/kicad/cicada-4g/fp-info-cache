@@ -1,0 +1,470 @@
+105930352101782
+OptoDevice
+ADNS-9800
+Laser Gaming Sensor ADNS-9800
+MOUSE MOUSE_SENSOR LASER_GAMING_SENSOR
+0
+16
+16
+OptoDevice
+AGILENT_HFBR-152x
+Fiberoptic Transmitter TX, HFBR series (https://docs.broadcom.com/docs/AV02-3283EN)
+Fiberoptic Transmitter
+0
+6
+6
+OptoDevice
+AGILENT_HFBR-252x
+Fiberoptic Receiver RX, HFBR series (https://docs.broadcom.com/docs/AV02-3283EN)
+Fiberoptic Transmitter
+0
+6
+6
+OptoDevice
+AMS_TSL2550_SMD
+http://ams.com/eng/content/download/250130/975613/142977
+TSL2550 ambient light sensor
+0
+4
+4
+OptoDevice
+Broadcom_AFBR-16xxZ_Horizontal
+Fiber Optic Transmitter and Receiver, https://docs.broadcom.com/docs/AV02-4369EN
+Fiber Optic Transmitter and Receiver
+0
+6
+6
+OptoDevice
+Broadcom_AFBR-16xxZ_Tilted
+Fiber Optic Transmitter and Receiver, https://docs.broadcom.com/docs/AV02-4369EN
+Fiber Optic Transmitter and Receiver
+0
+6
+6
+OptoDevice
+Broadcom_AFBR-16xxZ_Vertical
+Fiber Optic Transmitter and Receiver, https://docs.broadcom.com/docs/AV02-4369EN
+Fiber Optic Transmitter and Receiver
+0
+6
+6
+OptoDevice
+Broadcom_APDS-9301
+ambient light sensor, i2c interface, 6-pin chipled package, https://docs.broadcom.com/docs/AV02-2315EN
+ambient light sensor chipled
+0
+6
+6
+OptoDevice
+Broadcom_DFN-6_2x2mm_P0.65mm
+Broadcom  DFN, 6 Pin (https://docs.broadcom.com/docs/AV02-4755EN), generated with kicad-footprint-generator ipc_noLead_generator.py
+Broadcom DFN NoLead
+0
+6
+6
+OptoDevice
+Broadcom_LGA-8_2x2mm_P0.53mm
+Broadcom  LGA, 8 Pin (https://docs.broadcom.com/docs/AV02-4755EN), generated with kicad-footprint-generator ipc_noLead_generator.py
+Broadcom LGA NoLead
+0
+8
+8
+OptoDevice
+Everlight_ITR8307
+package for Everlight ITR8307 with PCB cutout, light-direction upwards, see http://www.everlight.com/file/ProductFile/ITR8307.pdf
+refective opto couple photo coupler
+0
+4
+4
+OptoDevice
+Everlight_ITR8307F43
+package for Everlight ITR8307/F43, see https://everlighteurope.com/index.php?controller=attachment&id_attachment=5385
+refective opto couple photo coupler
+0
+4
+4
+OptoDevice
+Everlight_ITR8307_Reverse
+package for Everlight ITR8307 with PCB cutout, light-direction downwards, see http://www.everlight.com/file/ProductFile/ITR8307.pdf
+refective opto couple photo coupler
+0
+4
+4
+OptoDevice
+Finder_34.81
+Relay SPST, Finder Type 34.81 (opto relays/coupler), vertical/standing form, see https://gfinder.findernet.com/public/attachments/34/EN/S34USAEN.pdf
+Relay SPST Finder
+0
+4
+4
+OptoDevice
+Hamamatsu_C12880
+Hamamatsu spectrometer, see http://www.hamamatsu.com/resources/pdf/ssd/c12880ma_kacc1226e.pdf
+opto spectrometer Hamamatsu
+0
+10
+10
+OptoDevice
+Hamamatsu_S13360-30CS
+SiPM, 2pin
+Hamamatsu SiPM
+0
+2
+2
+OptoDevice
+Kingbright_KPS-5130
+http://www.kingbright.com/attachments/file/psearch/000/00/00/KPS-5130PD7C(Ver.14).pdf
+KPS-5130 photodiode RGB sensor
+0
+4
+4
+OptoDevice
+Kingbright_KRC011_Horizontal
+Subminiature Reflective Optical Sensor, http://www.kingbright.com/attachments/file/psearch/000/00/00/KRC011(Ver.15).pdf
+Subminiature Reflective Optical Sensor
+0
+4
+4
+OptoDevice
+Kingbright_KRC011_Vertical
+Subminiature Reflective Optical Sensor, http://www.kingbright.com/attachments/file/psearch/000/00/00/KRC011(Ver.15).pdf
+Subminiature Reflective Optical Sensor
+0
+4
+4
+OptoDevice
+Kodenshi_LG206D
+http://kodenshi.co.jp/products/pdf/sensor/photointerrupter_ic/LG206D.pdf
+Photointerrupter  infrared LED with photo IC
+0
+5
+5
+OptoDevice
+Kodenshi_LG206L
+http://kodenshi.co.jp/products/pdf/sensor/photointerrupter_ic/LG205L.pdf
+Photointerrupter  infrared LED with photo IC
+0
+5
+5
+OptoDevice
+Kodenshi_SG105
+package for Kodenshi SG-105 with PCB cutout, light-direction upwards, see http://www.kodenshi.co.jp/products/pdf/sensor/photointerrupter_ref/SG-105.pdf
+refective opto couple photo coupler
+0
+4
+4
+OptoDevice
+Kodenshi_SG105F
+package for Kodenshi SG-105F, see http://www.kodenshi.co.jp/products/pdf/sensor/photointerrupter_ref/SG-105F.pdf
+refective opto couple photo coupler
+0
+4
+4
+OptoDevice
+Kodenshi_SG105_Reverse
+package for Kodenshi SG-105 with PCB cutout, light-direction downwards, see http://www.kodenshi.co.jp/products/pdf/sensor/photointerrupter_ref/SG-105.pdf
+refective opto couple photo coupler
+0
+4
+4
+OptoDevice
+LaserDiode_TO3.3-D3.3-3
+Laser Diode, TO-3.3mm, 3pin
+Laser Diode TO3.3
+0
+3
+3
+OptoDevice
+LaserDiode_TO5-D9-3
+Laser Diode, TO5-like (D=9mm), 3pin
+Laser Diode TO5-like
+0
+3
+3
+OptoDevice
+LaserDiode_TO18-D5.6-3
+Laser Diode, TO18-like (D=5.6mm), 3pin
+Laser Diode TO18-like
+0
+3
+3
+OptoDevice
+LaserDiode_TO38ICut-3
+Laser Diode, TO-38-ICut, 3pin
+Laser Diode TO38-ICut
+0
+3
+3
+OptoDevice
+LaserDiode_TO56-3
+Laser Diode, TO-56, 3pin
+Laser Diode TO56
+0
+3
+3
+OptoDevice
+Lite-On_LTR-303ALS-01
+ambient light sensor, i2c interface, 6-pin chipled package, http://optoelectronics.liteon.com/upload/download/DS86-2013-0004/LTR-303ALS-01_DS_V1.pdf
+ambient light sensor chipled
+0
+6
+6
+OptoDevice
+Luna_NSL-32
+Optoisolator with LED and photoresistor
+optoisolator
+0
+4
+4
+OptoDevice
+Maxim_OLGA-14_3.3x5.6mm_P0.8mm
+https://pdfserv.maximintegrated.com/land_patterns/90-0602.PDF
+OLGA-14 OESIP-14
+0
+14
+14
+OptoDevice
+ONSemi_QSE15x
+3 Lead Plastic Package
+ONSemi QSE158 QSE159
+0
+3
+3
+OptoDevice
+OnSemi_CASE100CY
+OnSemi CASE 100CY, light-direction upwards, see http://www.onsemi.com/pub/Collateral/QRE1113-D.PDF
+refective opto couple photo coupler
+0
+4
+4
+OptoDevice
+Osram_BPW82
+PhotoDiode, BPW82, RM2.54
+PhotoDiode BPW82 RM2.54
+0
+2
+2
+OptoDevice
+Osram_DIL2_4.3x4.65mm_P5.08mm
+PhotoDiode, plastic DIL, 4.3x4.65mm², RM5.08
+PhotoDiode plastic DIL RM5.08
+0
+2
+2
+OptoDevice
+Osram_LPT80A
+PhotoTransistor, sidelooker package, RM2.54
+PhotoTransistor sidelooker package RM2.54
+0
+2
+2
+OptoDevice
+Osram_SFH9x0x
+package for Osram SFH9x0x series of reflective photo interrupters/couplers, see http://www.osram-os.com/Graphics/XPic6/00200860_0.pdf
+reflective photo interrupter SMD
+0
+6
+6
+OptoDevice
+Osram_SFH205
+PhotoDiode, SFH205, RM2.54
+PhotoDiode SFH205 RM2.54
+0
+2
+2
+OptoDevice
+Osram_SFH225
+PhotoDiode, SFH225, RM2.54
+PhotoDiode SFH225 RM2.54
+0
+2
+2
+OptoDevice
+Osram_SMD-DIL2_4.5x4.0mm
+PhotoDiode, plastic SMD DIL, 4.5x4mm²
+PhotoDiode plastic SMD DIL
+0
+2
+2
+OptoDevice
+Osram_SMD-SmartDIL
+PhotoDiode, plastic SMD SmatDIL
+PhotoDiode plastic SMD SmatDIL
+0
+3
+3
+OptoDevice
+Panasonic_APV-AQY_SSOP-4_4.45x2.65mm_P1.27mm
+https://www.panasonic-electric-works.com/cps/rde/xbcr/pew_eu_en/technical_information_photomos_en.pdf
+SSOP4 APV21 AQY22
+0
+4
+4
+OptoDevice
+PerkinElmer_VTL5C
+Axial Vactrol (http://www.qsl.net/wa1ion/vactrol/vactrol.pdf)
+vactrol
+0
+4
+4
+OptoDevice
+PerkinElmer_VTL5Cx2
+Axial Vactrol (http://www.qsl.net/wa1ion/vactrol/vactrol.pdf)
+vactrol
+0
+5
+5
+OptoDevice
+R_LDR_4.9x4.2mm_P2.54mm_Vertical
+Resistor, LDR 4.9x4.2mm
+Resistor LDR4.9x4.2
+0
+2
+2
+OptoDevice
+R_LDR_5.0x4.1mm_P3mm_Vertical
+Resistor, LDR 5x4.1mm, see http://cdn-reichelt.de/documents/datenblatt/A500/A90xxxx%23PE.pdf
+Resistor LDR5x4.1mm
+0
+2
+2
+OptoDevice
+R_LDR_5.1x4.3mm_P3.4mm_Vertical
+Resistor, LDR 5.1x3.4mm, see http://yourduino.com/docs/Photoresistor-5516-datasheet.pdf
+Resistor LDR5.1x3.4mm
+0
+2
+2
+OptoDevice
+R_LDR_5.2x5.2mm_P3.5mm_Horizontal
+Resistor, LDR 5.2x5.2, upright, see http://cdn-reichelt.de/documents/datenblatt/A500/M996011A.pdf
+Resistor LDR5.2x5.2 
+0
+2
+2
+OptoDevice
+R_LDR_7x6mm_P5.1mm_Vertical
+Resistor, LDR 7x6mm
+Resistor LDR7x6mm
+0
+2
+2
+OptoDevice
+R_LDR_10x8.5mm_P7.6mm_Vertical
+Resistor, LDR 10x8.5mm
+Resistor LDR10.8.5mm
+0
+2
+2
+OptoDevice
+R_LDR_11x9.4mm_P8.2mm_Vertical
+Resistor, LDR 11x9.4mm
+Resistor LDR11x9.4mm
+0
+2
+2
+OptoDevice
+R_LDR_12x10.8mm_P9.0mm_Vertical
+Resistor, LDR 12x10.8mm, see http://yourduino.com/docs/Photoresistor-5516-datasheet.pdf
+Resistor LDR12x10.8mm
+0
+2
+2
+OptoDevice
+R_LDR_D6.4mm_P3.4mm_Vertical
+Resistor, LDR D=6.4mm, see http://yourduino.com/docs/Photoresistor-5516-datasheet.pdf
+Resistor LDRD=6.4mm
+0
+2
+2
+OptoDevice
+R_LDR_D13.8mm_P9.0mm_Vertical
+Resistor, diameter 13.8mm pitch 9mm, see http://yourduino.com/docs/Photoresistor-5516-datasheet.pdf
+Resistor LDR 
+0
+2
+2
+OptoDevice
+R_LDR_D20mm_P17.5mm_Vertical
+Resistor, LDR 20mm diameter, pin pitch 17.5mm, see http://yourduino.com/docs/Photoresistor-5516-datasheet.pdf
+Resistor LDR
+0
+2
+2
+OptoDevice
+Sharp_GP2Y0A41SK0F
+http://www.sharp-world.com/products/device/lineup/data/pdf/datasheet/gp2y0a41sk_e.pdf
+Distance Sensor Sharp
+0
+2
+2
+OptoDevice
+Sharp_IS471F
+Sharp OPIC IS471F, see http://pdf.datasheetcatalog.com/datasheet/Sharp/mXvrzty.pdf
+Sharp OPIC IS471F
+0
+4
+4
+OptoDevice
+Sharp_IS485
+Sharp OPIC, IS485, IS486, see http://microrato.ua.pt/main/Actividades/Estagios/Docs/IS485_6.pdf
+Sharp OPIC IS485 IS486
+0
+3
+3
+OptoDevice
+Siemens_SFH900
+package for Siemens SFH900 reflex photo interrupter/coupler/object detector, see https://www.batronix.com/pdf/sfh900.pdf
+Siemens SFH900 reflex photo interrupter coupler object detector
+0
+3
+3
+OptoDevice
+Toshiba_TORX170_TORX173_TORX193_TORX194
+Fiberoptic Reciver, RX, Toshiba, Toslink, TORX170, TORX173, TORX193, TORX194
+Fiberoptic Reciver RX Toshiba Toslink TORX170 TORX173 TORX193 TORX194
+0
+6
+6
+OptoDevice
+Toshiba_TOTX170_TOTX173_TOTX193_TOTX194
+Fiberoptic Reciver, RX, Toshiba, Toslink, TORX170, TORX173, TORX193, TORX194
+Fiberoptic Reciver RX Toshiba Toslink TORX170 TORX173 TORX193 TORX194
+0
+6
+6
+OptoDevice
+Vishay_CAST-3Pin
+IR Receiver Vishay TSOP-xxxx, CAST package, see https://www.vishay.com/docs/82493/tsop311.pdf
+IRReceiverVishayTSOP-xxxx CAST
+0
+3
+3
+OptoDevice
+Vishay_CNY70
+package for Vishay CNY70 refective photo coupler/interrupter
+Vishay CNY70 refective photo coupler
+0
+4
+4
+OptoDevice
+Vishay_MINICAST-3Pin
+IR Receiver Vishay TSOP-xxxx, MINICAST package, see https://www.vishay.com/docs/82669/tsop32s40f.pdf
+IR Receiver Vishay TSOP-xxxx MINICAST
+0
+3
+3
+OptoDevice
+Vishay_MINIMOLD-3Pin
+IR Receiver Vishay TSOP-xxxx, MINIMOLD package, see https://www.vishay.com/docs/82742/tsop331.pdf
+IR Receiver Vishay TSOP-xxxx MINIMOLD
+0
+3
+3
+OptoDevice
+Vishay_MOLD-3Pin
+IR Receiver Vishay TSOP-xxxx, MOLD package, see https://www.vishay.com/docs/82669/tsop32s40f.pdf
+IR Receiver Vishay TSOP-xxxx MOLD
+0
+3
+3

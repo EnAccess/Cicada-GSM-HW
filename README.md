@@ -1,21 +1,21 @@
 # Cicada HW - IoT Communications Module for Energy Access. 
 
-An easy way to get production ready, bi-directional communications for your IoT embedded device.
-
-This repository contains the hardware design for supported  2G, 3G, 4G modems (wifi coming in the future).
+This repository contains the hardware design of IOT embedded bi-directional communications device. through  2G, 3G, 4G modemsTech.
 
 Checkout the examples in the firmware repository here https://github.com/EnAccess/Cicada 
 
 
 ## Manufacturing files
 
-If you are only interested in manufacturing the PCBs, you only need files in the `/manufacturing/` directory. Just grab the latest .zip files, and send them to your contract manufacturer of choice.
+If you are only interested in manufacturing the PCBs, you only need files in the /manufacturing/ directory. send them to your contract manufacturer of choice,Some examples of other turnkey PCBA manufacturers are:
 
-For Cicada 2G, the latest files are in `/manufacturing/Cicada-2G-v1.1_biuld0_2019-05-22.zip`
+| Manufacturers | 
+|---------------|
+| JLCPCB |
+| PCBCart |
+| Bittele |
 
-Fot Cicada 4G, the latest files are in `/manufacturing/Cicada-4G-v1.1_biuld0_2019-05-20.zip`
-
-The .zip contains the PCB Gerber/drill files, the BOM, and assembly instructions.
+The /manufacturing/ directory contains the PCB Gerber/drill files, the BOM, and assembly instructions.
 
 ## Source files
 
@@ -23,19 +23,19 @@ If you'd like to take a look at the schematics and PCB layout, first, make sure 
 
 ### File structure
 
-The schematics and related files live under the `/design/` directory:
+The schematics and related files live under the /design/ directory:
 
-`/design/doc/datasheets/` - Datasheets for some of the components used. Obviously, not covered by the LICENSE.
-`/design/pdfs/` - Schamatics exported as PDF.
-`/design/renders` - 3D renders of the PCBs.
-`/design/source/ltspice` - Ltspice simulations, mainly concerning power usage and decoupling capacitors.
-`/design/source/kicad` - The juicy bits.
+| Directory | Content | 
+|-------|---------------|
+| /design/doc/datasheets/ | Datasheets for some of the components used. These files are not covered by this project's open source licence |
+| /design/pdf | Schematics exported as PDF |
+| /design/source/kicad/ | Kicad source files for the CICADA GSM hardwares inculding component lib files |
+| /manufacturing/gerber/ |  these are set of files which gives information on different layers used in the project (copper layers, silk screen , court yard and other relevent files) |
+| /manufacturing/stackup/ | Text file containing the details of the PCB material and stackup |
+| /manufacturing/pick and place/ | Pick and place files describing component locations and orientations for PCB Assembly |
+| /manufacturing/nc drill/ | NC Drill files describing type and specification of PCB drill holes (vias, through holes, mounting holes etc) |
+| /manufacturing/BOM/ | BOM contains the imformation of all the components used for cicad. directely generated from Kicad using the bom genration script  |
 
-Here we have:
-
-`/design/source/kicad/lib` - schematics symbols and footprint for a few parts not found in the standard KiCAD libraries.
-`/design/source/kicad/cicada-2g` - source files for the Cicada 2G (SIM800C based) PCB.
-`/design/source/kicad/cicada-4g` - source files for the Cicada 4G (SIM7600 based) PCB.
 
 ## Standard KiCAD libraries.
 
@@ -57,7 +57,7 @@ The schematics are lagely based on the `SIM7600 Series_Hardware Design_V1.02` an
 
 The host interface provides:
 - 5V - power
-- 3.3v - logiv level VCC reference.
+- 3.3v - logic level VCC reference.
 - VER_1 and VER_2 - version pins.
 - UART TX and RX. 
 - SPI - only available on the 4G board as an option. Normally, UART can be used for communication.
@@ -80,6 +80,8 @@ Same for Cicada 2G and Cicada 4G boards.
 ## Power
 
 Both Cicada 2G and Cicada 4G use single-chip SMPS to convert 5v down to 4v required by both SIM7600 and SIM800C modules.
+
+Both the modules use M3406-ADJ, which come with a internal over current protection (1.5A) and rated to 800mA operation. but the power supply circuit is design with the bulk output Capacitance which maintaines the voltage and pumps the shorter peak current requirment and the series resister at the power supply input reduce the stress on the hosts 5v regulator. 
 
 ![](https://github.com/EnAccess/Cicada-HW/blob/master/design/doc/figures/Power.png)
 

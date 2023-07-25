@@ -1,4 +1,0 @@
-- 2 layer
-- FR4
-- 1oz outer copper
-- total finished thickness: 1.6mm±0.2mm
