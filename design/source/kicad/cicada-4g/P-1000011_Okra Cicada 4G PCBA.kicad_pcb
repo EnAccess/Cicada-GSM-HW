@@ -8,7 +8,7 @@
   (title_block
     (title "Cicada 4G")
     (date "2019-04-02")
-    (rev "0.1")
+    (rev "${PROJECT_REVISION}")
     (company "Alexey Zaytsev / Okra Solar")
   )
 
