@@ -17,12 +17,12 @@
   >
   <!-- <img
     alt="GitHub Workflow Status"
-    src="https://img.shields.io/github/actions/workflow/status/enaccess/Cicada-GSM-HW/workflow.yaml"
+    src="https://img.shields.io/github/actions/workflow/status/EnAccess/Cicada-GSM-HW/workflow.yaml"
   > -->
-  <a href="https://github.com/EnAccess/OpenSmartMeter/blob/main/LICENSE" target="_blank">
+  <a href="https://github.com/EnAccess/Cicada-GSM-HW/blob/main/LICENSE" target="_blank">
     <img
       alt="License"
-      src="https://img.shields.io/github/license/enaccess/OpenSmartMeter"
+      src="https://img.shields.io/github/license/EnAccess/Cicada-GSM-HW"
     >
   </a>
 </p>
