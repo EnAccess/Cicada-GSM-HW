@@ -9,5 +9,5 @@ globs:
   - "**/*.md"
 
 # Define glob expressions to ignore
-ignores:
-  - "ignore*.md"
+# ignores:
+#   - "ignore*.md"
