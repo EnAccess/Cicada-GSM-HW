@@ -82,7 +82,7 @@ The schematics are lagely based on the `SIM7600 Series_Hardware Design_V1.02` an
 
 ## Host interface
 
-![](https://github.com/EnAccess/Cicada-HW/blob/master/design/doc/figures/Host-interface.png)
+![Host interface](https://github.com/EnAccess/Cicada-HW/blob/master/design/doc/figures/Host-interface.png)
 
 The host interface provides:
 
@@ -98,11 +98,11 @@ The host interface provides:
 
 The host interface provides a way for the host to detect the presence of a Cicada board, and distinguish between different boards:
 
-![](https://github.com/EnAccess/Cicada-HW/blob/master/design/doc/figures/Host-interface-versioning.png)
+![Host interface versioning](https://github.com/EnAccess/Cicada-HW/blob/master/design/doc/figures/Host-interface-versioning.png)
 
 ## Sim card slot
 
-![](https://github.com/EnAccess/Cicada-HW/blob/master/design/doc/figures/Sim-card.png)
+![Sim card](https://github.com/EnAccess/Cicada-HW/blob/master/design/doc/figures/Sim-card.png)
 
 Same for Cicada 2G and Cicada 4G boards.
 
@@ -112,13 +112,13 @@ Both Cicada 2G and Cicada 4G use single-chip SMPS to convert 5v down to 4v requi
 
 Both the modules use M3406-ADJ, which come with a internal over current protection (1.5A) and rated to 800mA operation. but the power supply circuit is design with the bulk output Capacitance which maintaines the voltage and pumps the shorter peak current requirment and the series resister at the power supply input reduce the stress on the hosts 5v regulator.
 
-![](https://github.com/EnAccess/Cicada-HW/blob/master/design/doc/figures/Power.png)
+![Power](https://github.com/EnAccess/Cicada-HW/blob/master/design/doc/figures/Power.png)
 
 ## Level shifters
 
 The SIM7600 module (Cicada 4G) operates at 1.8v logic level, while the SIM800C module (Cicada 2G) operates at 2.8v. In both vases, simple discrete level shifters are used to make the logic levels compatible with more common 3.3v.
 
-![](https://github.com/EnAccess/Cicada-HW/blob/master/design/doc/figures/Level-shifters.png)
+![Lvel shifters](https://github.com/EnAccess/Cicada-HW/blob/master/design/doc/figures/Level-shifters.png)
 
 ## Antennas
 
@@ -126,15 +126,15 @@ Antenna circuitry compied from the simcomm reference documentation:
 
 ### Cicada 4G - Main and Auxiliary antennas, plus a GPS antenna
 
-![](https://github.com/EnAccess/Cicada-HW/blob/master/design/doc/figures/Antennas-7600.png)
+![Antennas 7600](https://github.com/EnAccess/Cicada-HW/blob/master/design/doc/figures/Antennas-7600.png)
 
 ### Cicada 2G - Only the main antenna
 
-![](https://github.com/EnAccess/Cicada-HW/blob/master/design/doc/figures/Antennas-800C.png)
+![Antennas 800C](https://github.com/EnAccess/Cicada-HW/blob/master/design/doc/figures/Antennas-800C.png)
 
 ## USB
 
 On both Cicada 2G and Cicada 4G, USB can be used to update the modem firmware.
 The USB connector can also provide 5V power to the board during the process.
 
-![](https://github.com/EnAccess/Cicada-HW/blob/master/design/doc/figures/USB.png)
+![USB](https://github.com/EnAccess/Cicada-HW/blob/master/design/doc/figures/USB.png)
