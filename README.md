@@ -1,3 +1,34 @@
+<p align="center">
+  <a href="https://github.com/EnAccess/Cicada-GSM-HW">
+    <img
+      src="https://enaccess.org/wp-content/uploads/2023/04/Cicada-graphic-GitHub-2240-%c3%97-800-.svg"
+      alt="Cicada GSM"
+      width="640"
+    >
+  </a>
+</p>
+<p align="center">
+    <em>IoT Communications Module for Energy Access. A quick way to get production ready, bi-directional communications for your IoT embedded device.</em>
+</p>
+<p align="center">
+  <img
+    alt="Project Status"
+    src="https://img.shields.io/badge/Project%20Status-stable-green"
+  >
+  <!-- <img
+    alt="GitHub Workflow Status"
+    src="https://img.shields.io/github/actions/workflow/status/enaccess/Cicada-GSM-HW/workflow.yaml"
+  > -->
+  <a href="https://github.com/EnAccess/OpenSmartMeter/blob/main/LICENSE" target="_blank">
+    <img
+      alt="License"
+      src="https://img.shields.io/github/license/enaccess/OpenSmartMeter"
+    >
+  </a>
+</p>
+
+---
+
 # Cicada HW - IoT Communications Module for Energy Access. 
 
 This repository contains the hardware design of IOT embedded bi-directional communications device. through  2G, 3G, 4G modemsTech.
