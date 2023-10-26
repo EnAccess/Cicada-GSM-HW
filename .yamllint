@@ -1,0 +1,8 @@
+extends: default
+
+rules:
+  document-start: disable
+  indentation:
+    spaces: 2
+  truthy:
+    check-keys: false

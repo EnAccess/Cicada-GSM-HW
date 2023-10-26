@@ -17,7 +17,7 @@
   >
   <img
     alt="GitHub Workflow Status"
-    src="https://img.shields.io/github/actions/workflow/status/EnAccess/Cicada-GSM-HW/markdown-lint.yaml"
+    src="https://img.shields.io/github/actions/workflow/status/EnAccess/Cicada-GSM-HW/check-generic.yaml"
   >
   <a href="https://github.com/EnAccess/Cicada-GSM-HW/blob/main/LICENSE" target="_blank">
     <img
