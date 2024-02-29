@@ -5,9 +5,9 @@
   (paper "A3")
 
   (title_block
-    (title "Ciacada 2G")
+    (title "Cicada 2G")
     (date "2020-05-15")
-    (rev "2.0")
+    (rev "${PROJECT_REVISION}")
     (company "Alexey Zaytsev / Okra Solar")
   )
 

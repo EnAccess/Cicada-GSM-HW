@@ -437,5 +437,7 @@
       ""
     ]
   ],
-  "text_variables": {}
+  "text_variables": {
+    "PROJECT_REVISION": "2.0"
+  }
 }
