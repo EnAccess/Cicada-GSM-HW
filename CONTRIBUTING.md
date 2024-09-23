@@ -11,7 +11,7 @@ propose changes to this document in a pull request.
 
 ## Issues
 
-Issues are created [here](https://github.com/EnAccess/Cicada-GSM-HW/issues/new).
+Issues are created [here](https://github.com/EnAccess/Cicada-GSM-HW/issues/new/choose).
 
 ### How to Contribute in Issues
 
