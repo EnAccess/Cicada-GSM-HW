@@ -8,7 +8,7 @@
   (title_block
     (title "Cicada 4G")
     (date "2019-04-02")
-    (rev "0.1")
+    (rev "${PROJECT_REVISION}")
     (company "Alexey Zaytsev / Okra Solar")
   )
 
@@ -5140,7 +5140,7 @@
   (gr_text "FW\nUPD\nONLY" (at 141.2 127) (layer "F.SilkS") (tstamp a66c0bf6-511b-4c2d-b8a3-8358407436c5)
     (effects (font (size 1.2 1.2) (thickness 0.17)) (justify right))
   )
-  (gr_text "Cicada 4G v2.0" (at 133 84.15 90) (layer "F.SilkS") (tstamp bda46e44-354f-4b61-8ed9-3011168ec799)
+  (gr_text "Cicada 4G v${PROJECT_REVISION}" (at 133 84.15 90) (layer "F.SilkS") (tstamp bda46e44-354f-4b61-8ed9-3011168ec799)
     (effects (font (size 1.8 1.8) (thickness 0.35) italic))
   )
   (gr_text "- 2 layer FR-4\n\n- 1oz outer copper\n\n\nImpedance controlleed 50R SE lines:\nCo-planar line, to be more independent of stackup.\nW=0.55mm\nS=0.16mm\nH=1.5mm\nEr = 4.5 - 4.7, but can prob be wider\n\n- total finished thickness: 1.6mm±0.2mm\n" (at 178.8 77.9) (layer "Cmts.User") (tstamp 421ca491-bf90-4184-b797-b27befd6ff90)
