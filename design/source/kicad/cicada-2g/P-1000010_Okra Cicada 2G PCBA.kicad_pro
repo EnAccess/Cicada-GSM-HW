@@ -440,5 +440,8 @@
       ""
     ]
   ],
-  "text_variables": {}
+  "text_variables": {
+    "PROJECT_REVISION": "3.2.1",
+    "PROJECT_REVISION_MAJOR": "3"
+  }
 }

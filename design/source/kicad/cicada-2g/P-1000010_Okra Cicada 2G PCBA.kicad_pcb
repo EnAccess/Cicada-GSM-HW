@@ -6,9 +6,9 @@
 
   (paper "A4")
   (title_block
-    (title "Cicada 4G")
+    (title "Cicada 2G")
     (date "2019-04-02")
-    (rev "0.1")
+    (rev "${PROJECT_REVISION}")
     (company "Alexey Zaytsev / Okra Solar")
   )
 
@@ -4338,7 +4338,7 @@
   (gr_line (start 114 60) (end 148 60) (layer "Edge.Cuts") (width 0.15) (tstamp 8f7ca320-80a9-433c-bda6-615d275d617f))
   (gr_arc (start 111 63) (mid 111.87868 60.87868) (end 114 60) (layer "Edge.Cuts") (width 0.15) (tstamp ca5eb6fc-a206-440b-baf3-9c2223dfcfeb))
   (gr_line (start 119 125) (end 114 125) (layer "Edge.Cuts") (width 0.15) (tstamp ec53c537-bf0b-418e-a061-3dae5ec0ea04))
-  (gr_text "P-1000010-V3" (at 148.74 76.06 90) (layer "F.SilkS") (tstamp 00000000-0000-0000-0000-00005efba35a)
+  (gr_text "P-1000010-V${PROJECT_REVISION_MAJOR}" (at 148.74 76.06 90) (layer "F.SilkS") (tstamp 00000000-0000-0000-0000-00005efba35a)
     (effects (font (size 1.2 1.2) (thickness 0.3) italic) (justify left))
   )
   (gr_text "NET" (at 146.22 75.39 90) (layer "F.SilkS") (tstamp 00000000-0000-0000-0000-00005efba36a)
